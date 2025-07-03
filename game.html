@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <meta name="author" content="Silvio Streddi">
     <meta name="description" content="Rock, paper, scissors, lizard, spock game">
-    <meta name="keywords" content="rock, paper, scissors, lizard, spock, game">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
@@ -14,28 +14,36 @@
     <header>
             <h4>Welcome to</h4>
   <h1>ROCK * PAPER * SCISSORS * LIZARD * SPOCK</h1>
-  <nav id="mainMenu"><a href="" class="nav-button">HOME</a><a href="" class="nav-button">GAME</a><a href="" class="nav-button">HISTORY</a></nav>
+  <nav id="mainMenu"><a href="index.html" class="nav-button">HOME</a><a href="game.html" class="nav-button">GAME</a><a href="history.html" class="nav-button">HISTORY</a></nav>href="" class="nav-button">HISTORY</a></nav>
     </header>
 
     <section id="gameSection">
-<h2>Select your opponent:</h2>
-            <div id="choicesOpponent-">
-                <button class="opponent-button" id="human">Human</button>
-                <button class="opponent-button" id="monkey">Chitar</button>
-                <button class="opponent-button" id="fly">Fly</button>
-                <button class="opponent-button" id="invisible_man">Invisible Man</button>
-                <button class="opponent-button" id="invincible_cat">Mighty Cat</button>
+        <h2>Select your opponent:</h2>
+        <div id="choicesOpponent-">
+            <button class="opponent-button" id="human">Human</button>
+            <button class="opponent-button" id="monkey"><img src="assets\images\Chitar_xs.webp" alt=""></button>
+            <button class="opponent-button" id="fly">Fly</button>
+            <button class="opponent-button" id="invisible_man">Invisible Man</button>
+            <button class="opponent-button" id="invincible_cat">Mighty Cat</button>
 
-<div id="movespictures"><div id="picture1"></div id="picture2"></div>
+        <div class="scoreboard">
+            <div><img src="" alt=""> You: <span id="player-score">0</span></div>
+            <div><img src="" alt=""> Opponent: <span id="computer-score">0</span></div>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <div id="movespictures"><div id="picture1"></div id="picture2"></div>
             <h2 id="chooseMove">Choose your move:</h2>
             <div class="choices">
-                <button class="choice-button" id="rock">Rock</button>
-                <button class="choice-button" id="paper">Paper</button>
-                <button class="choice-button" id="scissors">Scissors</button>
-                <button class="choice-button" id="lizard">Lizard</button>
-                <button class="choice-button" id="spock">Spock</button>
+                <button class="choice-button" id="rock">Rock✊</button>
+                <button class="choice-button" id="paper">Paper🖐</button>
+                <button class="choice-button" id="scissors">Scissors✌️</button>
+                <button class="choice-button" id="lizard">Lizard🦎</button>
+                <button class="choice-button" id="spock">Spock🖖</button>
             </div>
-            </section>
+        <div class="result" id="result"></div>
+
+    </section>
     
 
     <script src="assets/js/script.js"></script>
