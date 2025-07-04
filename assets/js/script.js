@@ -7,4 +7,12 @@ const winningMove = {
     spock: ["scissors", "rock"]
 };
 
+document.querySelectorAll("move-button").forEach(button => {
+    button.addEventListener("click", () => {
+        const playerChoice = button.id;
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+        const result = determineWinner(playerChoice, computerChoice);
+        displayResult(playerChoice, computerChoice, result);
+    });
+});
 
