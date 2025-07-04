@@ -7,7 +7,8 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Roboto', 'Tahoma', sans-serif;
+
 }
 
 body {
@@ -22,14 +23,14 @@ flex-direction: column;
 
 header {
     justify-content: center;
-    background-color: lightblue;
+    background-color: rgb(191, 250, 103);
     border: 0.8rem solid rgb(156, 2, 20);
     width: 95%;
     padding: 1.5rem 1rem 2.5rem 1rem ;
-    border-radius: 2.8rem;
+    border-radius: 4rem;
     display: block;
     margin: 0.5rem;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 
@@ -77,10 +78,10 @@ height: auto;
     align-items: center;
     flex-direction: column;
     justify-content: center;  
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0.5rem;
+    background-color: rgba(255, 86, 182, 0.5);
+    border-radius: 3rem;
     color: rgb(0, 53, 102);    
-    margin: 1rem ;
+    margin: 3rem ;
     padding: 3rem;
 
 }
@@ -90,11 +91,13 @@ height: auto;
   display: block; 
   text-align: justify;    
   margin: 1rem 0;
-  padding: 1rem;           
+  padding: 3rem;           
   line-height: 1.6;         
   background-color: #f9f9f9; 
-  border-radius: 8px;       
+  border-radius: 0.5rem;       
 }
+
+variationsText
 
 .opponent-button {
     background-color: lightblue;
@@ -110,3 +113,20 @@ height: auto;
     height: auto;
     border-radius: 50%;
 }   
+
+.scoreboard {
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#reset-btn {
+  background:crimson ;
+  border: 0.2rem solid tomato;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-weight: 800;
+}
