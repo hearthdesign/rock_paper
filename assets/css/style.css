@@ -36,7 +36,7 @@ header {
 
 h1, h4 {
     margin-top: 0;
-    margin-left: 3rem;
+    margin-left: 5.5%;
 }
  h1 {
     font-size: 2rem;
@@ -70,9 +70,16 @@ h1, h4 {
     box-shadow: #f83838 0 0.2rem 0.3rem 0.4rem;
 }
 
-#gesturesimg {
+#gesturesImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#gesturesImg {
 width: 55%;
-min-width: 200px;
+min-width: 215px;
 height: auto;
 }
 
