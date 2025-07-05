@@ -21,5 +21,26 @@ const resetButton = document.getElementById("reset-btn");
 
 const moveButtons = document.querySelectorAll(".move-button");
 
+moveButtons.forEach(button => { 
+    button.addEventListener("click", () => {
+        const playerChoice = button.dataset.choice;
+        const computerChoice = getComputerChoice();
+        
+        updateImgs(playerChoice, computerChoice);
+        const result = checkWinner(playerChoice, computerChoice);
+        showResult( playerChoice, computerChoice, result);
+        updateScores(result);
+    });
+});
 
+function getComputerChoice() {
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
+}
 
+function checkWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return "IT'S A TIE!";
+    } else if (winningMove[playerChoice].includes(computerChoice)) {
+        return "YOU WIN!";
+    }}
