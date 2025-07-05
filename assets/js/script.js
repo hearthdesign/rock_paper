@@ -53,7 +53,7 @@ function updateImgs(playerChoice, computerChoice) {
 }
 
 function showResult(player, computer, result) {
-    let message = `You chose ${player}, Opponent chose ${computer}.`;
+    let message = `You chose ${player}, the opponent chose ${computer}.`;
     if (result === 'win') 
         message += "YOU WIN!";
      else if (result === 'lose') 
