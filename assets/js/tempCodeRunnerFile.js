@@ -29,7 +29,7 @@ moveButtons.forEach(button => {
         updateImgs(playerChoice, computerChoice);
         const result = checkWinner(playerChoice, computerChoice);
         showResult( playerChoice, computerChoice, result);
-        updateScore(result);
+        updateScores(result);
     });
 });
 
@@ -38,7 +38,7 @@ function getComputerChoice() {
     return choices[randomIndex];
 }
 
-function checkWinner(player, computer) {
+function getResult(player, computer) {
   if (player === computer) return 'draw';
   else if (winningMove[player].includes(computer)) return 'win';
   else return 'lose';
@@ -47,13 +47,12 @@ function checkWinner(player, computer) {
 function updateImgs(playerChoice, computerChoice) {
     playerChoiceImg.src = `assets/images/${playerChoice}.png`;
     computerChoiceImg.src = `assets/images/${computerChoice}.png`;
-    playerChoiceImg.alt = playerChoice;
-    computerChoiceImg.alt = computerChoice;
-
+    playerChoiceImg.alt = player;
+    computerChoiceImg.alt = computer;
 }
 
 function showResult(player, computer, result) {
-    let message = `You chose ${player}, Opponent chose ${computer}.`;
+    let message = "You chose ${player}, Opponent chose ${computer}. ";
     if (result === 'win') 
         message += "YOU WIN!";
      else if (result === 'lose') 
@@ -61,15 +60,15 @@ function showResult(player, computer, result) {
      else 
         message += "IT'S A TIE!";
     
-    resultElement.innerHTML = message;
+    resultEl.innerHTML = msg;
     }
 
     function updateScore(result) {
-  if (result === 'win')
+  if (result === 'win') {
     playerScore++;
-   else if (result === 'lose')
+  } else if (result === 'lose') {
     computerScore++;
-    // Update the score display
+  }
   playerScoreElement.textContent = playerScore;
   computerScoreElement.textContent = computerScore;
 }
