@@ -10,7 +10,7 @@ const winningMove = {
 let playerScore= 0;
 let computerScore= 0;
 
-const reultElement = document.getElementById("result");
+const resultElement = document.getElementById("result");
 const playerScoreElement = document.getElementById("playerScore");
 const computerScoreElement = document.getElementById("computerScore");
 
