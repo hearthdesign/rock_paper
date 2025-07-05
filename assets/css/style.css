@@ -24,7 +24,7 @@ body {
 header {
     justify-content: center;
     background-color: rgb(191, 250, 103);
-    border: 2rem solid rgb(156, 2, 20);
+    border: 0.9rem solid rgb(156, 2, 20);
     width: 98%;
     padding: 0 ;
     border-radius: 2.5rem;
@@ -63,7 +63,7 @@ h1, h4 {
     font-weight: bold;
     margin: 0 2.5% 0.8rem 2.55%;
     align-items: space-between  ;
-    background-color: lightgreen;
+    background-color: rgb(193, 255, 193);
     padding: 0.3rem 1.5rem;
     border-radius: 1.5rem;
     border: 0.5rem solid rgb(194, 21, 41);
@@ -96,6 +96,19 @@ height: auto;
 
 }
 
+#descriptionSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+    background-color: rgba(21, 197, 255, 0.5);
+    border-radius: 3rem;
+    color: rgb(0, 53, 102);    
+    margin: 3rem ;
+    padding: 1rem;
+
+}
+
 
 .block-text {
   display: block; 
@@ -108,36 +121,123 @@ height: auto;
   border-radius: 1.5rem;       
 }
 
-
+#choicesOpponent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
 
 .opponent-button {
     background-color: lightblue;
-    border: 0.3rem solid rgb(156, 2, 20);
+    border: 0.5rem solid rgb(156, 2, 20);
     border-radius: 50%;
-    padding: 0.5rem;
-    margin: 0.5rem;
+    padding: 0.2rem;
+    width: 10%;
+    margin: 0.3%;
     cursor: pointer;
+    width: 100px;
 }
 
+
 .opponent-button img {
-    width: 100%;
+    width: 98%;
     height: auto;
     border-radius: 50%;
 }   
 
+#gameSection {
+  display: flex;
+  width: 96%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 86, 182, 0.5);
+  border: 0.5rem solid rgb(131, 53, 175);
+  border-radius: 3rem;
+  color: rgb(0, 53, 102);
+  margin: 1.5rem;
+  padding: 1rem;
+}
+
+#selectOpponent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem 1.5rem 0.5rem 0.5rem ;
+    background-color: lightblue;  
+}
+
 .scoreboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0.7rem;
+  background-color: rgba(255, 86, 182, 0.5);
+  border-radius: 0.5rem;
  display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  background-color: rgb(105, 227, 186);
+  border-radius: 0.5rem;
 }
+
 
 #reset-btn {
   background:crimson ;
-  border: 0.2rem solid tomato;
+  border: 0.3rem solid tomato;
   padding: 0.5rem 1rem;
   color: white;
   cursor: pointer;
-  border-radius: 0.8rem;
+  border-radius: 1.5rem;
   font-weight: 800;
+}
+#reset-btn:hover {
+  background: tomato;
+  color: white;
+}
+
+#movesPictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  background-color: sandybrown;
+  border-radius: 0.5rem 0.5rem 2rem 2rem;
+  width: 100%;
+}   
+
+.move-button {
+  background-color: lightblue;
+  border: 0.3rem solid rgb(156, 2, 20);
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.selections {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  color: rgb(193, 255, 193);
+  align-items: center;
+  margin-top: 1rem;
+  padding: 6rem;
+  background-color: rgba(255, 86, 182, 0.5);
+  border-radius: 0.5rem 0.5rem 2rem 2rem;
 }
