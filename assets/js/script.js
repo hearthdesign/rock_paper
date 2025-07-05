@@ -51,4 +51,25 @@ function updateImgs(playerChoice, computerChoice) {
     computerChoiceimg.alt = computer;
 }
 
+function showResult(player, computer, result) {
+    let message = "You chose ${player}, Opponent chose ${computer}. ";
+    if (result === 'win') 
+        message += "YOU WIN!";
+     else if (result === 'lose') 
+        message += "YOU LOSE!";
+     else 
+        message += "IT'S A TIE!";
+    
+    resultEl.innerHTML = msg;
+    }
+
+    function updateScore(result) {
+  if (result === 'win') {
+    playerScore++;
+  } else if (result === 'lose') {
+    computerScore++;
+  }
+  playerScoreElement.textContent = playerScore;
+  computerScoreElement.textContent = computerScore;
+}
 
