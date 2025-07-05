@@ -45,10 +45,10 @@ function getResult(player, computer) {
 }
 
 function updateImgs(playerChoice, computerChoice) {
-    playerChoiceimg.src = `assets/images/${playerChoice}.png`;
-    computerChoiceimg.src = `assets/images/${computerChoice}.png`;
-    playerChoiceimg.alt = player;
-    computerChoiceimg.alt = computer;
+    playerChoiceImg.src = `assets/images/${playerChoice}.png`;
+    computerChoiceImg.src = `assets/images/${computerChoice}.png`;
+    playerChoiceImg.alt = player;
+    computerChoiceImg.alt = computer;
 }
 
 function showResult(player, computer, result) {
