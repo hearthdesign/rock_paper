@@ -73,3 +73,13 @@ function showResult(player, computer, result) {
   computerScoreElement.textContent = computerScore;
 }
 
+// reset the score
+document.getElementById('reset-btn').addEventListener('click', () => {
+  playerScore = 0;
+  computerScore = 0;
+  playerScoreElement.textContent = '0';
+  computerScoreElement.textContent = '0';
+  resultElement.textContent = '';
+  playerChoiceImg.src = '';
+  computerChoiceImg.src = '';
+});
