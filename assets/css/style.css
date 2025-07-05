@@ -69,7 +69,22 @@ h1, h4 {
     padding: 0.3rem 1.5rem;
     border-radius: 1.5rem;
     border: 0.5rem solid rgb(194, 21, 41);
-    box-shadow: #f83838 0 0.2rem 0.3rem 0.4rem;
+    box-shadow: #ff1515 0 0.3rem 0.2rem 0.3rem;
+}
+
+#mainMenu a:hover {
+    background-color: rgb(222, 12, 131);
+    color: rgb(255, 255, 255);
+    box-shadow: #feac15 0 0.2rem 0.3rem 0.5rem;    
+    transition: 0.15s;
+}
+
+#mainMenu a:active {
+    background-color: rgb(255, 14, 78);
+    border: 0.5rem solid rgb(255, 121, 4);
+    box-shadow: #ff0000 0 0.1rem 0.3rem 0.5rem;
+    color:rgb(255, 255, 255);
+    transition: 0.1s;
 }
 
 #gesturesImgBox {
@@ -110,7 +125,6 @@ height: auto;
     color: rgb(0, 53, 102);    
     margin: 3rem ;
     padding: 1rem;
-
 }
 
 .block-text {
@@ -165,8 +179,8 @@ th {
 }
 
 .opponent-button {
-    background-color: lightblue;
-    border: 0.5rem solid rgb(0, 42, 121);
+    background-color: rgb(35, 59, 121);
+    border: 0.5rem solid rgb(164, 194, 255);
     border-radius: 50%;
     padding: 0.2rem;
     width: 10%;
@@ -175,12 +189,25 @@ th {
     width: 100px;
 }
 
-
 .opponent-button img {
     width: 98%;
     height: auto;
     border-radius: 50%;
 }   
+
+button.opponent-button:hover {
+    background-color: rgb(255, 149, 0);
+    border: 0.5rem solid #27586c;
+    box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.5rem  ;
+    transition: 0.1s;
+}
+
+button.opponent-button:active {
+    background-color: rgb(242, 234, 0);
+    border: 0.7rem solid rgb(255, 121, 4);
+    box-shadow: #ff0000 0 0.1rem 0.5rem 0.2rem;
+    transition: 0.1s;
+}
 
 #gameSection {
   display: flex;
@@ -240,9 +267,25 @@ th {
   box-shadow: #f83838 0 0.1rem 0.3rem 0.2rem;
 }
 #reset-btn:hover {
-  background: tomato;
-  color: white;
+  background: rgb(255, 123, 100);
+  color: rgb(63, 0, 68);
+  box-shadow: #a5f838 0 0.1rem 0.3rem 0.5rem;
+  transition: 0.1s;
 }
+
+#reset-btn:active {
+ background-color: rgb(242, 234, 0);
+    border: 0.3rem solid rgb(255, 121, 4);
+    box-shadow: #ff0000 0 0.1rem 0.3rem 0.2rem;
+    color:crimson;
+    transition: 0.1s;
+}
+
+/* #reset-btn:active {
+  background: rgb(255, 123, 100);
+  color: rgb(63, 0, 68);
+  box-shadow: #a5f838 0 0.1rem 0.3rem 0.2rem;
+} */
 
 #movesPictures {
   display: flex;
@@ -259,13 +302,24 @@ th {
 }   
 
 .move-button {
-  background-color: lightblue;
-  border: 0.3rem solid rgb(156, 2, 20);
+  background-color: rgb(0, 40, 53);
+  color: rgb(204, 239, 251);
+  border: 0.4rem solid rgb(197, 0, 23);
   border-radius: 1.5rem;
   padding: 0.5rem 1rem;
   margin: 0.3rem;
   cursor: pointer;
   font-weight: bold;
+  box-shadow: #ffffff 0 0.2rem 0.5rem 0.15rem;    
+}
+
+.move-button:hover {
+  background-color: rgb(255, 38, 0);
+  color: rgb(0, 40, 53);
+  font-weight: 800;
+  border: 0.3rem solid #007910;
+  box-shadow: #85ff19 0 0.1rem 0.3rem 0.5rem;
+transition: 0.1s;
 }
 
 .selections {
