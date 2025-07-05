@@ -38,9 +38,17 @@ function getComputerChoice() {
     return choices[randomIndex];
 }
 
-function checkWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) {
-        return "IT'S A TIE!";
-    } else if (winningMove[playerChoice].includes(computerChoice)) {
-        return "YOU WIN!";
-    }}
+function getResult(player, computer) {
+  if (player === computer) return 'draw';
+  else if (winningMove[player].includes(computer)) return 'win';
+  else return 'lose';
+}
+
+function updateImgs(playerChoice, computerChoice) {
+    playerChoiceimg.src = `assets/images/${playerChoice}.png`;
+    computerChoiceimg.src = `assets/images/${computerChoice}.png`;
+    playerChoiceimg.alt = player;
+    computerChoiceimg.alt = computer;
+}
+
+
