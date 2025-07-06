@@ -20,15 +20,18 @@
     <section id="gameSection">
         <div id="selectOpponent"><h2>Select your opponent:</h2></div>
         <div id="choicesOpponent">
-            <button class="opponent-button" id="human"><img src="assets/images/humanBtn.png" alt="Human"></button>
-            <button class="opponent-button" id="monkey"><img src="assets/images/monkeyBtn.png" alt="Chitar"></button>
-            <button class="opponent-button" id="fly"><img src="assets/images/flyBtn.png" alt="Fly"></button>
-            <button class="opponent-button" id="invisible_man"><img src="assets/images/invisibleManBtn.png" alt="Invisible Man"></button>
-            <button class="opponent-button" id="invincible_cat"><img src="assets/images/CatBtn.png" alt="Sweet Cat"></button></div>
+            <button class="opponent-button" data-name="human" data-img="humanBtn.png"><img src="assets/images/humanBtn.png" alt="Human"></button>
+            <button class="opponent-button" data-name="monkey" data-img="monkeyBtn.png"><img src="assets/images/monkeyBtn.png" alt="Chitar"></button>
+            <button class="opponent-button" data-name="fly"
+            data-img="flyBtn.png"><img src="assets/images/flyBtn.png" alt="Fly"></button>
+            <button class="opponent-button" data-name="invisible-man" data-img="invisibleManBtn.png"><img src="assets/images/invisibleManBtn.png" alt="Invisible Man"></button>
+            <button class="opponent-button" data-name="invincible-cat" data-img="catBtn.png"><img src="assets/images/catBtn.png" alt="Mighty Cat"></button></div>
 
         <div class="scoreboard">
-            <div><img src="" alt="your score"> You: <span id="playerScore">0</span></div>
-            <div><img src="" alt="opponent's score ">Opponent: <span id="computerScore">0</span></div>
+            <div id="yourScoreBox"> YOU: <span id="playerScore">0</span></div>
+            <div>
+                <img id="opponentAvatar" src="" alt="Opponent's Score" width="60"><span id="opponentName">Opponent</span>: <span id="computerScore">0</span>
+            </div>
             <button id="reset-btn">RESET</button>
         </div>
 

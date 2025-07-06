@@ -33,6 +33,26 @@ moveButtons.forEach(button => {
     });
 });
 
+let selectedOpponent = {
+  name: "Opponent",
+  image: ""
+};
+
+const opponentButtons = document.querySelectorAll(".opponent-button");
+const opponentAvatar = document.getElementById("opponentAvatar");
+const opponentNameDisplay = document.getElementById("opponentName");
+
+opponentButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    selectedOpponent.name = button.dataset.name;
+    selectedOpponent.image = `assets/images/${button.dataset.img}`;
+    opponentNameDisplay.textContent = selectedOpponent.name;
+    opponentAvatar.src = selectedOpponent.image;
+    opponentAvatar.alt = selectedOpponent.name;
+  });
+});
+
+
 function getComputerChoice() {
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
@@ -53,7 +73,7 @@ function updateImgs(playerChoice, computerChoice) {
 }
 
 function showResult(player, computer, result) {
-    let message = `You chose ${player}, the opponent chose ${computer}.`;
+    let message = `You chose ${player}, ${selectedOpponent.name} chose ${computer}.`;
     if (result === 'win') 
         message += "YOU WIN!";
      else if (result === 'lose') 

@@ -21,6 +21,21 @@ const resetButton = document.getElementById("reset-btn");
 
 const moveButtons = document.querySelectorAll(".move-button");
 
+const opponentButtons = document.querySelectorAll(".opponent-button");
+const opponentAvatar = document.getElementById("opponentAvatar");
+const opponentNameDisplay = document.getElementById("opponentName");
+
+opponentButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    selectedOpponent.name = button.dataset.name;
+    selectedOpponent.image = `assets/images/${button.dataset.img}`;
+    opponentNameDisplay.textContent = selectedOpponent.name;
+    opponentAvatar.src = selectedOpponent.image;
+    opponentAvatar.alt = selectedOpponent.name;
+  });
+});
+
+
 moveButtons.forEach(button => { 
     button.addEventListener("click", () => {
         const playerChoice = button.dataset.choice;
