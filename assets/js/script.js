@@ -35,7 +35,8 @@ moveButtons.forEach(button => {
 
 let selectedOpponent = {
   name: "Opponent",
-  image: ""
+  image: "",
+  folder: "default",
 };
 
 const opponentButtons = document.querySelectorAll(".opponent-button");
@@ -46,6 +47,7 @@ opponentButtons.forEach(button => {
   button.addEventListener("click", () => {
     selectedOpponent.name = button.dataset.name;
     selectedOpponent.image = `assets/images/${button.dataset.img}`;
+    selectedOpponent.folder = button.dataset.name;
     opponentNameDisplay.textContent = selectedOpponent.name;
     opponentAvatar.src = selectedOpponent.image;
     opponentAvatar.alt = selectedOpponent.name;
@@ -65,8 +67,8 @@ function checkWinner(player, computer) {
 }
 
 function updateImgs(playerChoice, computerChoice) {
-    playerChoiceImg.src = `assets/images/${playerChoice}.png`;
-    computerChoiceImg.src = `assets/images/${computerChoice}.png`;
+    playerChoiceImg.src = `assets/images/player/${playerChoice}.png`;
+    computerChoiceImg.src = `assets/images/${selectedOpponent.folder}/${computerChoice}.png`;
     playerChoiceImg.alt = playerChoice;
     computerChoiceImg.alt = computerChoice;
 
