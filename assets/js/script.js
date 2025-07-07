@@ -43,6 +43,7 @@ const opponentButtons = document.querySelectorAll(".opponent-button");
 const opponentAvatar = document.getElementById("opponentAvatar");
 const opponentNameDisplay = document.getElementById("opponentName");
 
+// opponent selection
 opponentButtons.forEach(button => {
   button.addEventListener("click", () => {
     selectedOpponent.name = button.dataset.name;
@@ -53,7 +54,6 @@ opponentButtons.forEach(button => {
     opponentAvatar.alt = selectedOpponent.name;
   });
 });
-
 
 function getComputerChoice() {
     const randomIndex = Math.floor(Math.random() * choices.length);
@@ -71,17 +71,16 @@ function updateImgs(playerChoice, computerChoice) {
     computerChoiceImg.src = `assets/images/${selectedOpponent.folder}/${computerChoice}.png`;
     playerChoiceImg.alt = playerChoice;
     computerChoiceImg.alt = computerChoice;
-
 }
 
 function showResult(player, computer, result) {
     let message = `You chose ${player}, ${selectedOpponent.name} chose ${computer}.`;
     if (result === 'win') 
-        message += "YOU WIN!";
+        message += " YOU WIN!";
      else if (result === 'lose') 
-        message += "YOU LOSE!";
+        message += " YOU LOSE!";
      else 
-        message += "IT'S A TIE!";
+        message += " IT'S A TIE!";
     
     resultElement.innerHTML = message;
     }
