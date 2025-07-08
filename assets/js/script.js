@@ -21,8 +21,33 @@ const resetButton = document.getElementById("reset-btn");
 
 const moveButtons = document.querySelectorAll(".move-button");
 
+// Sound effects
+const sounds = {
+    win: new Audio("assets/sounds/win.mp3"),
+    menu: new Audio("assets/sounds/menu.mp3"),
+    reset: new Audio("assets/sounds/reset.mp3"),
+    select: new Audio("assets/sounds/select.mp3"),
+    click: new Audio("assets/sounds/click.mp3")
+};
+
+const menuLinks = document.querySelectorAll(".menu-sound");
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", function (e) {
+    if (!soundEnabled) return;
+    e.preventDefault(); // Prevent immediate navigation
+    playSound('menu');
+
+    // Wait for sound to play before redirecting
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 350); // Match the sound length (ms)
+  });
+});
+
 moveButtons.forEach(button => { 
     button.addEventListener("click", () => {
+        playSound("click");
         const playerChoice = button.dataset.choice;
         const computerChoice = getComputerChoice();
         
@@ -30,8 +55,26 @@ moveButtons.forEach(button => {
         const result = checkWinner(playerChoice, computerChoice);
         showResult( playerChoice, computerChoice, result);
         updateScore(result);
+        playSound(click); 
     });
 });
+
+let soundEnabled = true;
+
+const toggleSoundBtn = document.getElementById("toggle-sound");
+toggleSoundBtn.addEventListener("click", () => {
+    soundEnabled = !soundEnabled;
+    toggleSoundBtn.textContent = soundEnabled ? "🔊 Sound: ON" : "🔇 Sound: OFF";
+});
+
+// Enable sound 
+function playSound(type) {
+    if (soundEnabled && sounds[type]) {
+        sounds[type].currentTime = 0;
+        sounds[type].play();
+    }
+}
+
 
 let selectedOpponent = {
   name: "Opponent",
@@ -43,7 +86,7 @@ const opponentButtons = document.querySelectorAll(".opponent-button");
 const opponentAvatar = document.getElementById("opponentAvatar");
 const opponentNameDisplay = document.getElementById("opponentName");
 
-// opponent selection
+//  select opponent
 opponentButtons.forEach(button => {
   button.addEventListener("click", () => {
     selectedOpponent.name = button.dataset.name;
@@ -52,6 +95,7 @@ opponentButtons.forEach(button => {
     opponentNameDisplay.textContent = selectedOpponent.name;
     opponentAvatar.src = selectedOpponent.image;
     opponentAvatar.alt = selectedOpponent.name;
+    playSound("select");
   });
 });
 
@@ -66,6 +110,7 @@ function checkWinner(player, computer) {
   else return 'lose';
 }
 
+// Update images for player and computer chosen moves
 function updateImgs(playerChoice, computerChoice) {
     playerChoiceImg.src = `assets/images/player/${playerChoice}.png`;
     computerChoiceImg.src = `assets/images/${selectedOpponent.folder}/${computerChoice}.png`;
@@ -75,10 +120,13 @@ function updateImgs(playerChoice, computerChoice) {
 
 function showResult(player, computer, result) {
     let message = `You chose ${player}, ${selectedOpponent.name} chose ${computer}.`;
-    if (result === 'win') 
+    if (result === 'win') {
         message += " YOU WIN!";
-     else if (result === 'lose') 
+        playSound("win");
+      }
+     else if (result === 'lose') {
         message += " YOU LOSE!";
+        playSound("lose");}
      else 
         message += " IT'S A TIE!";
     
@@ -97,6 +145,7 @@ function showResult(player, computer, result) {
 
 // reset the game
 document.getElementById('reset-btn').addEventListener('click', () => {
+  playSound("reset");
   playerScore = 0;
   computerScore = 0;
   playerScoreElement.textContent = '0';
@@ -104,4 +153,5 @@ document.getElementById('reset-btn').addEventListener('click', () => {
   resultElement.textContent = '';
   playerChoiceImg.src = '';
   computerChoiceImg.src = '';
+  
 });
