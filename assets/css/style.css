@@ -25,7 +25,7 @@ body {
 header {
     justify-content: center;
     background-color: rgb(198, 252, 50);
-    border: 0.9rem solid rgb(156, 2, 20);
+    border: 0.9rem solid rgb(183, 0, 21);
     width: 98%;
     padding: 0 ;
     border-radius: 2.5rem;
@@ -35,9 +35,20 @@ header {
 
 }
 
-h1, h4 {
+#gameName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(193, 255, 193);
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+}
+
+h4 {
     margin-top: 0;
-    margin-left: 5.5%;
+    margin-left: 35%;
 }
  h1 {
     font-size: 2rem;
@@ -46,6 +57,7 @@ h1, h4 {
  h4 {
     font-size: 1.2rem;
     margin-bottom: 0;
+
  }
 
  #mainMenu {
@@ -96,7 +108,7 @@ h1, h4 {
 #gesturesImg {
 width: 55%;
 min-width: 215px;
-height: auto;
+height: auto;;
 }
 
 #historySection {
@@ -239,6 +251,36 @@ button.opponent-button:active {
     background-color: #8dffe2;  
 }
 
+.sound-toggle {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  width: 96%;
+  height: auto;
+  margin-top: 0;
+  margin-right: 12.5%;
+  padding: 0.5rem;
+  color: rgb(251, 232, 232);
+  background-color: #8dffe2;
+  border-radius: 1.5rem;
+
+}
+
+#toggle-sound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: auto;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  color: rgb(251, 232, 232);
+  background-color: #106859;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
 .scoreboard {
   display: flex;
   flex-direction: row;
@@ -268,6 +310,8 @@ button.opponent-button:active {
   font-weight: bold;
   font-size: 1.5rem;
   border: #5cc400 0.2rem solid;
+  margin-bottom: 0;
+  margin-top: 5.8rem;
   border-radius: 1.5rem;
   padding: 0.1rem 0.5rem;
 }
@@ -337,17 +381,17 @@ button.opponent-button:active {
   text-align: center;
   color:rgb(100, 0, 125);
   font-weight: bold;
-  font-size:2rem";
+  font-size: 1.5rem;
  }
 
-#movesPictures {
+#movesBtnsbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3%;
-  margin: 1%;
+  gap: 1%;
+  margin: 0.3%;
   background-color: rgb(255, 205, 162);
   border: 0.2rem solid rgba(255, 86, 182, 0.5);
   border-radius: 0.5rem 0.5rem 1rem 1rem;
@@ -355,14 +399,24 @@ button.opponent-button:active {
   height: 100%;
 }   
 
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0;
+}
+
 .move-button {
   background-color: rgb(0, 40, 53);
   color: rgb(204, 239, 251);
   border: 0.35rem solid rgb(254, 38, 63);
   border-radius: 1.5rem;
-  padding: 0.3rem 2%;
+  padding: 0.5rem 2%;
   margin: 3%;
   cursor: pointer;
+  font-size: 1rem;
   font-weight: bold;
   box-shadow: #ffffff 0 0.2rem 0.5rem 0.15rem;    
 }
@@ -378,7 +432,7 @@ button.opponent-button:active {
 
 .move-button:active {
   background: rgb(226, 13, 6);
-  color:rgb(141, 253, 233) ;
+  color:rgb(190, 255, 243) ;
   box-shadow: #a5f838 0 0.1rem 0.1rem 0.5rem;
   transition: 0.5sec smooth;
 }
@@ -389,7 +443,7 @@ button.opponent-button:active {
   justify-content: space-between;
   color: rgb(193, 255, 193);
   align-items: center;
-  margin-top: 3%;
+  margin-top: 1%;
   padding: 1%;
   background-color: rgba(255, 86, 182, 0.5);
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -404,6 +458,7 @@ button.opponent-button:active {
   background-color: rgb(0, 53, 102);
   border-radius: 1.5rem;
   padding: 0.5rem;
+  padding-bottom: 3rem;
 }
 
 .player-selection img, .computer-selection img {
