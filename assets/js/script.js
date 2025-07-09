@@ -55,7 +55,7 @@ moveButtons.forEach(button => {
         const result = checkWinner(playerChoice, computerChoice);
         showResult( playerChoice, computerChoice, result);
         updateScore(result);
-        playSound(click); 
+
     });
 });
 
@@ -127,8 +127,8 @@ function showResult(player, computer, result) {
      else if (result === 'lose') {
         message += " YOU LOSE!";
         playSound("lose");}
-     else 
-        message += " IT'S A TIE!";
+     else {
+        message += " IT'S A TIE!";}
     
     resultElement.innerHTML = message;
     }
