@@ -152,7 +152,7 @@ function showResult(player, computer, result) {
 }
 
 // reset the game
-document.getElementById('reset-btn').addEventListener('click', () => {
+const resetBtn = document.getElementById('reset-btn').addEventListener('click', () => {
   playSound("reset");
   playerScore = 0;
   computerScore = 0;
@@ -161,5 +161,4 @@ document.getElementById('reset-btn').addEventListener('click', () => {
   resultElement.textContent = '';
   playerChoiceImg.src = '';
   computerChoiceImg.src = '';
-  
 });
