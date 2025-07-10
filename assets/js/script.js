@@ -165,4 +165,15 @@ const resetBtn = document.getElementById('reset-btn').addEventListener('click', 
   resultElement.textContent = '';
   playerChoiceImg.src = '';
   computerChoiceImg.src = '';
+
+    // Reset opponent image and name display
+  opponentAvatar.src = '';
+  opponentAvatar.alt = 'First: select an opponent!';
+  opponentNameDisplay.textContent = 'Opponent';
+  
+  // Reset selectedOpponent object if needed
+  selectedOpponent = {
+    name: "",
+    image: "",
+    folder: "default",};
 });
