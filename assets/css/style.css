@@ -370,6 +370,7 @@ button.opponent-button:active {
 
 #result {
   display: flex;
+  flex-basis: 50%;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -381,7 +382,7 @@ button.opponent-button:active {
   text-align: center;
   color:rgb(100, 0, 125);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
  }
 
 #movesBtnsbox {
@@ -401,10 +402,11 @@ button.opponent-button:active {
 
 .choices {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 50%;
+  width: 95%;
   margin: 0;
 }
 
@@ -413,10 +415,10 @@ button.opponent-button:active {
   color: rgb(204, 239, 251);
   border: 0.35rem solid rgb(254, 38, 63);
   border-radius: 1.5rem;
-  padding: 0.5rem 2%;
+  padding: 0.3rem;
   margin: 3%;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   box-shadow: #ffffff 0 0.2rem 0.5rem 0.15rem;    
 }
@@ -454,7 +456,7 @@ button.opponent-button:active {
   flex-direction: column;
   align-items: center;
   justify-content: space-between ;
-  width: 45% ;
+  width: 49% ;
   background-color: rgb(0, 53, 102);
   border-radius: 1.5rem;
   padding: 0.5rem;
@@ -462,9 +464,10 @@ button.opponent-button:active {
 }
 
 .player-selection img, .computer-selection img {
-  width: 65%;
+  width: 95%;
   height: auto;
   border-radius: 50%;
+  border: #f9f9f9 0.2rem solid;
 }
 
 footer {
