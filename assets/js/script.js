@@ -61,11 +61,19 @@ moveButtons.forEach(button => {
 
 let soundEnabled = true;
 
-const toggleSoundBtn = document.getElementById("toggle-sound");
-toggleSoundBtn.addEventListener("click", () => {
-    soundEnabled = !soundEnabled;
-    toggleSoundBtn.textContent = soundEnabled ? "🔊 Sound: ON" : "🔇 Sound: OFF";
-});
+
+// Runs after the page fully loads
+window.onload = function () {
+  const toggleSoundBtn = document.getElementById("toggle-sound");
+
+  if (toggleSoundBtn) {
+    toggleSoundBtn.addEventListener("click", () => {
+      soundEnabled = !soundEnabled;
+      toggleSoundBtn.textContent = soundEnabled ? "🔊 Sound: ON" : "🔇 Sound: OFF";
+    });
+  }
+};
+
 
 // Enable sound 
 function playSound(type) {
