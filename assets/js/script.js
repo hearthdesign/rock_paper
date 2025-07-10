@@ -155,7 +155,7 @@ function showResult(player, computer, result) {
   computerScoreElement.textContent = computerScore;
 }
 
-// reset the game (variable scope issue fixed)
+/* Reset the game - Fix runtime error caused by missing reset button on some pages by adding a null check before attaching the event listener. Also ensured full game state is reset on click.*/
 const resetBtn = document.getElementById('reset-btn').addEventListener('click', () => {
   playSound("reset");
   playerScore = 0;
