@@ -471,7 +471,6 @@ button.opponent-button:active {
   align-items: center;
   justify-content: space-between ;
   width: 49% ;
-/* min-height: 21rem; */
   background-color: rgb(0, 53, 102);
   border-radius: 1.5rem;
   padding: 0.5rem;
