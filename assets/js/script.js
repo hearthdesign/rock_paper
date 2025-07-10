@@ -1,3 +1,4 @@
+// Define valid choices and the moves each one can defeat
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 const winningMove = {
     rock: ["scissors", "lizard"],
@@ -7,6 +8,7 @@ const winningMove = {
     spock: ["scissors", "rock"]
 };
 
+// Initialize scores
 let playerScore= 0;
 let computerScore= 0;
 
@@ -45,6 +47,7 @@ menuLinks.forEach(link => {
   });
 });
 
+
 moveButtons.forEach(button => { 
     button.addEventListener("click", () => {
         playSound("click");
@@ -65,7 +68,7 @@ let soundEnabled = true;
 // Runs after the page fully loads
 window.onload = function () {
   const toggleSoundBtn = document.getElementById("toggle-sound");
-
+//  Only add the event listener if the button is found
   if (toggleSoundBtn) {
     toggleSoundBtn.addEventListener("click", () => {
       soundEnabled = !soundEnabled;
@@ -94,7 +97,7 @@ const opponentButtons = document.querySelectorAll(".opponent-button");
 const opponentAvatar = document.getElementById("opponentAvatar");
 const opponentNameDisplay = document.getElementById("opponentName");
 
-//  select opponent
+// updates the opponent's avatar and name when a button is clicked
 opponentButtons.forEach(button => {
   button.addEventListener("click", () => {
     selectedOpponent.name = button.dataset.name;
@@ -126,6 +129,7 @@ function updateImgs(playerChoice, computerChoice) {
     computerChoiceImg.alt = computerChoice;
 }
 
+// display the result
 function showResult(player, computer, result) {
     let message = `You chose ${player}, ${selectedOpponent.name} chose ${computer}.`;
     if (result === 'win') {
@@ -140,7 +144,7 @@ function showResult(player, computer, result) {
     
     resultElement.innerHTML = message;
     }
-
+// Update the score based on the result
     function updateScore(result) {
   if (result === 'win')
     playerScore++;
@@ -151,7 +155,7 @@ function showResult(player, computer, result) {
   computerScoreElement.textContent = computerScore;
 }
 
-// reset the game
+// reset the game (variable scope issue fixed)
 const resetBtn = document.getElementById('reset-btn').addEventListener('click', () => {
   playSound("reset");
   playerScore = 0;
