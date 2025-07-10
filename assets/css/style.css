@@ -46,21 +46,38 @@ header {
     padding: 0.5rem;
 }
 
-h4 {
-    margin-top: 0;
-    margin-left: 35%;
-}
+
+
  h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+ }
+
+ h2 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+ }
+ h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
  }
 
  h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-
+    font-size: 0.8rem;
+    margin-bottom: 0.2%;
+    text-align: center;
  }
 
- #mainMenu {
+#welcome {
+    margin-top: 0;
+    margin-left: 15%;
+    text-align: start;
+  }
+ 
+  #mainMenu {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -181,46 +198,6 @@ th {
     padding: 0.2rem;
 }
 
-#choicesOpponent {
-    display: flex;
-    justify-content: center;
-    gap: 3%;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 0.5rem;
-}
-
-.opponent-button {
-    background-color: rgb(35, 59, 121);
-    border: 0.5rem solid rgb(141, 173, 236);
-    border-radius: 50%;
-    padding: 0.2rem;
-    width: 10%;
-    margin: 0.3%;
-    cursor: pointer;
-    width: 100px;
-}
-
-.opponent-button img {
-    width: 98%;
-    height: auto;
-    border-radius: 50%;
-}   
-
-button.opponent-button:hover {
-    background-color: rgb(174, 255, 0);
-    border: 0.5rem solid #6bd5ff;
-    box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.5rem  ;
-    transition: 0.1s;
-}
-
-button.opponent-button:active {
-    background-color: rgb(242, 234, 0);
-    border: 0.7rem solid rgb(255, 121, 4);
-    box-shadow: #ff0000 0 0.1rem 0.5rem 0.2rem;
-    transition: 0.1s;
-}
-
 #gameSection {
   display: flex;
   flex-grow: 1;
@@ -251,13 +228,51 @@ button.opponent-button:active {
     background-color: #8dffe2;  
 }
 
+#choicesOpponent {
+    display: flex;
+    justify-content: space-around ;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.opponent-button {
+    background-color: rgb(35, 59, 121);
+    border: 0.5rem solid rgb(141, 173, 236);
+    border-radius: 50%;
+    padding: 0.2rem;
+    width: 100%;
+    margin: 2%;
+    cursor: pointer;
+    width: 100px;
+}
+
+.opponent-button img {
+    width: 98%;
+    height: auto;
+    border-radius: 50%;
+}   
+
+button.opponent-button:hover {
+    background-color: rgb(174, 255, 0);
+    border: 0.5rem solid #6bd5ff;
+    box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.5rem  ;
+    transition: 0.1s;
+}
+
+button.opponent-button:active {
+    background-color: rgb(242, 234, 0);
+    border: 0.7rem solid rgb(255, 121, 4);
+    box-shadow: #ff0000 0 0.1rem 0.5rem 0.2rem;
+    transition: 0.1s;
+}
 .sound-toggle {
   display: flex;
   justify-content: end;
   align-items: flex-end;
   width: 96%;
   height: auto;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-right: 12.5%;
   padding: 0.5rem;
   color: rgb(251, 232, 232);
@@ -305,7 +320,7 @@ button.opponent-button:active {
   color: rgb(0, 53, 102);
   background-color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   border: #5cc400 0.2rem solid;
   margin-bottom: 0;
   margin-top: auto;
@@ -328,7 +343,7 @@ button.opponent-button:active {
   color: rgb(0, 53, 102);
   background-color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   border: rgb(141, 173, 236) 0.2rem solid;
   border-radius: 1.5rem;
   padding: 0.1rem 0.5rem;
@@ -412,12 +427,12 @@ button.opponent-button:active {
 .move-button {
   background-color: rgb(0, 40, 53);
   color: rgb(204, 239, 251);
-  border: 0.35rem solid rgb(254, 38, 63);
-  border-radius: 1.5rem;
+  border: 0.5rem solid rgb(254, 38, 63);
+  border-radius: 50%;
   padding: 0.3rem;
-  margin: 3%;
+  margin: 5%;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   box-shadow: #ffffff 0 0.2rem 0.7rem 0.5rem;    
 }
@@ -456,17 +471,17 @@ button.opponent-button:active {
   align-items: center;
   justify-content: space-between ;
   width: 49% ;
+/* min-height: 21rem; */
   background-color: rgb(0, 53, 102);
   border-radius: 1.5rem;
   padding: 0.5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 7%;
 }
 
 .player-selection img, .computer-selection img {
   width: 95%;
-  height: auto;
   border-radius: 50%;
-
+  margin: 0.5rem;
 }
 
 footer {
