@@ -395,7 +395,7 @@ button.opponent-button:active {
   margin: 0.3%;
   background-color: rgb(255, 205, 162);
   border: 0.2rem solid rgba(255, 86, 182, 0.5);
-  border-radius: 0.5rem 0.5rem 1rem 1rem;
+  border-radius: 0.5rem 0.5rem 1.6rem 1.6rem;
   width: 100%;
   height: 100%;
 }   
@@ -420,7 +420,7 @@ button.opponent-button:active {
   cursor: pointer;
   font-size: 2rem;
   font-weight: bold;
-  box-shadow: #ffffff 0 0.2rem 0.5rem 0.15rem;    
+  box-shadow: #ffffff 0 0.2rem 0.7rem 0.5rem;    
 }
 
 .move-button:hover {
@@ -448,7 +448,7 @@ button.opponent-button:active {
   margin-top: 1%;
   padding: 1%;
   background-color: rgba(255, 86, 182, 0.5);
-  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
 }
 
 .player-selection, .computer-selection {
@@ -467,7 +467,7 @@ button.opponent-button:active {
   width: 95%;
   height: auto;
   border-radius: 50%;
-  border: #f9f9f9 0.2rem solid;
+
 }
 
 footer {
