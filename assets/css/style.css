@@ -24,8 +24,10 @@ body {
 
 header {
     justify-content: center;
-    background-color: rgb(198, 252, 50);
+    background-color:rgb(33, 56, 0) ;
+    color: rgb(183, 0, 21);
     border: 0.9rem solid rgb(183, 0, 21);
+    box-shadow: #f83838 0 0.1rem 0.3rem 0.2rem;
     width: 98%;
     padding: 0 ;
     border-radius: 2.5rem;
@@ -42,6 +44,8 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgb(193, 255, 193);
+    box-shadow: #38cbf8 0 0.1rem 0.3rem 0.2rem;
+    color: rgb(128, 4, 185);
     border-radius: 1.5rem;
     padding: 0.5rem;
 }
@@ -75,6 +79,7 @@ header {
     margin-top: 0;
     margin-left: 15%;
     text-align: start;
+    color: rgb(193, 255, 193);
   }
  
   #mainMenu {
@@ -98,7 +103,7 @@ header {
     padding: 0.3rem 1.5rem;
     border-radius: 1.5rem;
     border: 0.5rem solid rgb(194, 21, 41);
-    box-shadow: #ff1515 0 0.3rem 0.2rem 0.3rem;
+    box-shadow: #ff1515 0 0.15rem 0.2rem 0.3rem;
 }
 
 #mainMenu a:hover {
@@ -208,6 +213,7 @@ th {
   justify-content: center;
   background-color: rgb(193, 255, 193);
   border: 0.5rem solid rgb(131, 53, 175);
+  box-shadow: #38cbf8 0 0.1rem 0.3rem 0.2rem;
   border-radius: 3rem;
   color: rgb(0, 53, 102);
   margin: 1.5rem;
@@ -221,11 +227,12 @@ th {
     justify-content: center;
     padding-bottom: 1rem;
     width: 100%;
+    color: rgb(255, 255, 255);
     height: auto;
     margin-bottom: 0.8rem;
     border: 0.2rem solid rgba(255, 86, 182, 0.5);
     border-radius: 1.5rem 1.5rem 0.5rem 0.5rem ;
-    background-color: #8dffe2;  
+    background-color: #033564;  
 }
 
 #choicesOpponent {
@@ -275,8 +282,9 @@ button.opponent-button:active {
   margin-top: 1rem;
   margin-right: 12.5%;
   padding: 0.5rem;
+  ;
   color: rgb(251, 232, 232);
-  background-color: #8dffe2;
+  background-color: #033564;
   border-radius: 1.5rem;
 
 }
@@ -290,8 +298,9 @@ button.opponent-button:active {
   font-weight: 900;
   margin-top: 0.5rem;
   padding: 0.5rem;
-  color: rgb(251, 232, 232);
-  background-color: #106859;
+  color: rgb(177, 239, 255);
+  background-color: #001b22;
+  border: 0.35rem solid rgb(255, 182, 223);
   border-radius: 1.5rem;
   text-align: center;
 }
@@ -488,9 +497,17 @@ footer {
   justify-content: center;
   align-items: center;
   width: 95%;
-  padding: 5rem;
+  height: 2.5vh;
+  padding: 2rem ;
   background-color: rgb(33, 56, 0);
   border: 0.8rem solid rgb(156, 2, 20);
+  box-shadow: #f83838 0 0.1rem 0.3rem 0.2rem;
   border-radius: 3rem;
   margin-bottom: 1rem;
+}
+
+#copyright {
+  color: rgb(193, 255, 193);
+  font-weight: bold;
+  font-size: 0.8rem;
 }
