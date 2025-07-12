@@ -161,6 +161,7 @@ function showResult(player, computer, result) {
   Also resets scores, result text, player/computer choices, and opponent display.
 */
 const resetBtn = document.getElementById('reset-btn')
+// Only add the listener if the button exists on the page
 if (resetBtn) {
   resetBtn.addEventListener('click', () => {
   playSound("reset");
@@ -178,7 +179,7 @@ if (resetBtn) {
   opponentAvatar.alt = "Default Opponent";
   opponentNameDisplay.textContent = 'Mad Robot';
   
-  // Reset selectedOpponent object if needed
+  // Reset image and name of the selected opponent
   selectedOpponent = {
     name: "",
     image: "",
