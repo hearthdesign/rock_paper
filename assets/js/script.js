@@ -89,7 +89,7 @@ function playSound(type) {
 
 let selectedOpponent = {
   name: "Opponent",
-  image: "",
+  image: "assets/images/defaultOpponent.png",
   folder: "default",
 };
 
@@ -166,10 +166,11 @@ const resetBtn = document.getElementById('reset-btn').addEventListener('click', 
   playerChoiceImg.src = '';
   computerChoiceImg.src = '';
 
+
     // Reset opponent image and name display
-  opponentAvatar.src = '';
-  opponentAvatar.alt = 'First: select an opponent!';
-  opponentNameDisplay.textContent = 'Opponent';
+  opponentAvatar.src = "assets/images/defaultOpponent.png";  // Reset to default
+  opponentAvatar.alt = "Default Opponent";
+  opponentNameDisplay.textContent = 'Mad Robot';
   
   // Reset selectedOpponent object if needed
   selectedOpponent = {
