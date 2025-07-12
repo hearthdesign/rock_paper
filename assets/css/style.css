@@ -519,6 +519,7 @@ button.opponent-button:active {
 footer {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
   align-items: center;
   width: 95%;
   height: auto;
@@ -534,6 +535,7 @@ footer >div {
   flex-wrap: wrap;
   height: 4rem;
   width: 28%;
+  min-width: 200px;
   margin-left: 5%;
   color: rgb(193, 255, 193);
   font-weight: bold;
@@ -546,7 +548,6 @@ footer >div {
   display: block;
   justify-content: start;
   color: rgb(193, 255, 193);
-
 }
 
 #legalInfo h2, #contactInfo h2 {
@@ -554,6 +555,25 @@ footer >div {
   font-size: 1rem;
   margin-left: 0;
   align-items: flex-start;
+}
+
+#legalInfo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #063b2e;
+  padding: 2%;
+  border-radius: 0.5rem;
+  box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.2rem, inset 0 0.1rem 0.8rem rgba(252, 252, 155, 0.9)  ;
+}
+
+#contactInfo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #102100;
+  padding: 2%;
+  border-radius: 0.5rem;
+  box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.2rem, inset 0 0.1rem 0.8rem rgba(252, 252, 155, 0.9)  ;
+
 }
 
 #legalInfoLink {
