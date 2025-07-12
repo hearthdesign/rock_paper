@@ -155,8 +155,14 @@ function showResult(player, computer, result) {
   computerScoreElement.textContent = computerScore;
 }
 
-/* Reset the game - Fix runtime error caused by missing reset button on some pages by adding a null check before attaching the event listener. Also ensured full game state is reset on click.*/
-const resetBtn = document.getElementById('reset-btn').addEventListener('click', () => {
+/* 
+  Reset the game – Fix runtime error by checking if 'reset-btn' exists before adding the listener.
+  The code runs only on pages where the reset button is present.
+  Also resets scores, result text, player/computer choices, and opponent display.
+*/
+const resetBtn = document.getElementById('reset-btn')
+if (resetBtn) {
+  resetBtn.addEventListener('click', () => {
   playSound("reset");
   playerScore = 0;
   computerScore = 0;
@@ -178,3 +184,4 @@ const resetBtn = document.getElementById('reset-btn').addEventListener('click', 
     image: "",
     folder: "default",};
 });
+}
