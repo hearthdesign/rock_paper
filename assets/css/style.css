@@ -542,6 +542,32 @@ footer >div {
   scroll-behavior: smooth;
 }
 
+#legalInfo, #contactInfo {
+  display: block;
+  justify-content: start;
+  color: rgb(193, 255, 193);
+
+}
+
+#legalInfo h2, #contactInfo h2 {
+  display: flex;
+  font-size: 1rem;
+  margin-left: 0;
+  align-items: flex-start;
+}
+
+#legalInfoLink {
+  color: rgb(193, 255, 193);
+  font-weight: 900;
+}
+
+#mailtoLink {
+  color: rgb(193, 255, 193);
+  font-weight: 900;
+
+}
+
+
 /* This Scrollbar properties Work in Chrome, Safari, Edge (not Firefox) */
 footer p::-webkit-scrollbar {
   width: 15px;
