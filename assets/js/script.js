@@ -19,7 +19,7 @@ const computerScoreElement = document.getElementById("computerScore");
 const playerChoiceImg = document.getElementById("playerChoice");
 const computerChoiceImg = document.getElementById("computerChoice");
 
-const resetButton = document.getElementById("reset-btn");
+// const resetButton = document.getElementById("reset-btn");
 
 const moveButtons = document.querySelectorAll(".move-button");
 
