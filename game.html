@@ -19,9 +19,9 @@
                 <h1>ROCK PAPER SCISSORS LIZARD SPOCK</h1>
             </div>
             <nav id="mainMenu">
-                <a href="index.html" class="nav-button menu-sound">HOME</a>
-                <a href="game.html" class="nav-button menu-sound">GAME</a>
-                <a href="history.html" class="nav-button menu-sound">HISTORY</a>
+                <a href="index.html" class="navButton menuSound">HOME</a>
+                <a href="game.html" class="navButton menuSound">GAME</a>
+                <a href="history.html" class="navButton menuSound">HISTORY</a>
             </nav>
     </header>
 
@@ -29,48 +29,48 @@
         <div id="selectOpponent">
             <h2>SELECT YOUR OPPONENT:</h2>
             <div id="choicesOpponent">
-                <button class="opponent-button" data-name="human" data-img="humanBtn.png">
+                <button class="opponentButton" data-name="human" data-img="humanBtn.png">
                     <img src="assets/images/humanBtn.png" alt="Human"></button>
-                <button class="opponent-button" data-name="monkey" data-img="monkeyBtn.png">
+                <button class="opponentButton" data-name="monkey" data-img="monkeyBtn.png">
                     <img src="assets/images/monkeyBtn.png" alt="Chitar"></button>
-                <button class="opponent-button" data-name="fly" data-img="flyBtn.png">
+                <button class="opponentButton" data-name="fly" data-img="flyBtn.png">
                     <img src="assets/images/flyBtn.png" alt="Fly"></button>
-                <button class="opponent-button" data-name="invisible-man" data-img="invisibleManBtn.png">
+                <button class="opponentButton" data-name="invisible-man" data-img="invisibleManBtn.png">
                     <img src="assets/images/invisibleManBtn.png" alt="Invisible Man"></button>
-                <button class="opponent-button" data-name="invincible-cat" data-img="catBtn.png">
+                <button class="opponentButton" data-name="invincible-cat" data-img="catBtn.png">
                     <img src="assets/images/catBtn.png" alt="Mighty Cat"></button>
-                <button id="toggle-sound">🔊 Sound: ON</button>
+                <button id="toggleSound">🔊 Sound: ON</button>
                 
             </div>
         </div>
 
         <div class="scoreboard">
             <div id="yourScoreBox">YOU: <span id="playerScore">0</span></div>
-            <div id="OpponentScoreBox">
+            <div id="opponentScoreBox">
                 <img id="opponentAvatar" src="assets/images/defaultOpponent.png" alt="Default Opponent" width="80"><br>
                 <div id="computerScoreBox">
                     <span id="opponentName">Mad Robot</span>:<span id="computerScore">0</span></div>
                 </div>
-            <button id="reset-btn">RESET</button>
+            <button id="resetBtn">RESET</button>
         </div>
 
         <div id="movesBtnsbox">
             <h2 id="chooseMove">MAKE YOUR MOVE:</h2>
             <div class="choices">
-                <button class="move-button" data-choice="rock">✊</button>
-                <button class="move-button" data-choice="paper">🖐</button>
-                <button class="move-button" data-choice="scissors">✌️</button>
-                <button class="move-button" data-choice="lizard">🦎</button>
-                <button class="move-button" data-choice="spock">🖖</button>
+                <button class="moveButton" data-choice="rock">✊</button>
+                <button class="moveButton" data-choice="paper">🖐</button>
+                <button class="moveButton" data-choice="scissors">✌️</button>
+                <button class="moveButton" data-choice="lizard">🦎</button>
+                <button class="moveButton" data-choice="spock">🖖</button>
             </div>
             <div class="result" id="result"></div>
         
             <div class= "selections">
-                <div class="player-selection">
+                <div class="playerSelection">
                     <h4>Your<br>selection:</h4>
                     <img id="playerChoice" src="assets/images/placeholderMove.png" alt="placeholder">
                 </div>
-                <div class="computer-selection">
+                <div class="computerSelection">
                     <h4>Opponent's<br>selection:</h4>
                     <img id="computerChoice" src="assets/images/placeholderMove.png" alt="placeholder">
                 </div>

@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.moveButton, table{
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
 html {
     height: 100%;
     margin: 0;
@@ -51,8 +55,6 @@ header {
     padding: 0.5rem;
 }
 
-
-
  h1 {
     font-size: 1.5rem;
  }
@@ -83,7 +85,7 @@ header {
     color: rgb(193, 255, 193);
   }
  
-  #mainMenu {
+#mainMenu {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -130,8 +132,8 @@ header {
 
 #gesturesImg {
     width: 55%;
-min-width: 215px;
-height: auto;;
+    min-width: 215px;
+    height: auto;;
 }
 
 #historySection {
@@ -167,11 +169,10 @@ height: auto;;
     padding: 0.6rem 0.6rem 0.6rem 0.6rem ;
 }
 
-
-
-.block-text {
+.blockText {
   display: block; 
   width: 98%;
+  height: auto ;
   overflow:auto;
   text-align: justify;    
   margin: 0.8rem;
@@ -185,10 +186,11 @@ height: auto;;
   scroll-behavior: smooth;
 }
 
-.block-text::-webkit-scrollbar {
+.blockText::-webkit-scrollbar {
   width: 15px;
 }
-.block-text::-webkit-scrollbar-thumb {
+
+.blockText::-webkit-scrollbar-thumb {
   background-color: rgba(30, 127, 30, 0.5);
   border-radius: 10px;
   box-shadow: inset 0 0.1rem 0.4rem rgba(47, 47, 1, 0.5);
@@ -201,17 +203,19 @@ height: auto;;
 }
 
 /* table @ "index.html" */
-
-#tablecontainer{
+#tableContainer{
     display: flex;
-    overflow: auto  ;
+    overflow: auto;
+    flex: auto;
 }
 
-table {
+.rulesTable {
     width: 100%;
     border-radius: 0.5rem;
     margin: 1rem 0;
     border: none;
+    width: 100%; 
+    text-align: center;
 }   
 
 th {
@@ -232,9 +236,7 @@ th {
     padding: 0.2rem;
 }
 
-
 /* game.html */
-
 #gameSection {
   display: flex;
   flex-grow: 1;
@@ -276,7 +278,7 @@ th {
     margin-bottom: 0.5rem;
 }
 
-.opponent-button {
+.opponentButton {
     background-color: rgb(31, 53, 109);
     border: 0.5rem solid rgb(103, 215, 243);
     box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.2rem;
@@ -288,27 +290,27 @@ th {
     width: 100px;
 }
 
-.opponent-button img {
+.opponentButton img {
     width: 98%;
     height: auto;
     border-radius: 50%;
 }   
 
-button.opponent-button:hover {
+button.opponentButton:hover {
     background-color: rgb(174, 255, 0);
     border: 0.5rem solid #6bd5ff;
     box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.5rem  ;
     transition: 0.1s;
 }
 
-button.opponent-button:active {
+button.opponentButton:active {
     background-color: rgb(242, 234, 0);
     border: 0.7rem solid rgb(255, 121, 4);
     box-shadow: #ff0000 0 0.1rem 0.5rem 0.2rem;
     transition: 0.1s;
 }
 
-#toggle-sound {
+#toggleSound {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,12 +359,11 @@ button.opponent-button:active {
   padding: 0.1rem 0.5rem;
 }
 
-#OpponentScoreBox {
+#opponentScoreBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 #computerScoreBox{
@@ -385,7 +386,7 @@ button.opponent-button:active {
   height: auto;
 }
 
-#reset-btn {
+#resetBtn {
   background:crimson ;
   border: 0.3rem solid rgb(55, 1, 97);
   padding: 0.5rem 1rem;
@@ -396,14 +397,15 @@ button.opponent-button:active {
   font-weight: 800;
   box-shadow: #f83838 0 0.1rem 0.3rem 0.2rem;
 }
-#reset-btn:hover {
+
+#resetBtn:hover {
   background: rgb(255, 123, 100);
   color: #3f0047;
   box-shadow: #a5f838 0 0.1rem 0.3rem 0.5rem;
   transition: 0.1s;
 }
 
-#reset-btn:active {
+#resetBtn:active {
   background-color: rgb(242, 234, 0);
   border: 0.3rem solid rgb(255, 121, 4);
   box-shadow: #ff0000 0 0.1rem 0.3rem 0.2rem;
@@ -454,7 +456,7 @@ button.opponent-button:active {
   margin: 0;
 }
 
-.move-button {
+.moveButton {
   background-color: rgb(0, 40, 53);
   border: 0.35rem solid rgb(254, 38, 63);
   border-radius: 50%;
@@ -466,7 +468,7 @@ button.opponent-button:active {
   box-shadow: #ffffff 0 0.2rem 0.7rem 0.5rem;    
 }
 
-.move-button:hover {
+.moveButton:hover {
   background-color: rgb(255, 38, 0);
   font-weight: 800;
   border: 0.35rem solid #007910;
@@ -477,7 +479,7 @@ button.opponent-button:active {
   transition: 0.1s;
 }
 
-.move-button:active {
+.moveButton:active {
   background: rgb(226, 6, 98);
   box-shadow: #a5f838 0 0.1rem 0.7rem 0.5rem;
   transition: 0.1s ease;
@@ -495,7 +497,7 @@ button.opponent-button:active {
   border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
 }
 
-.player-selection, .computer-selection {
+.playerSelection, .computerSelection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -507,12 +509,11 @@ button.opponent-button:active {
   padding-bottom: 7%;
 }
 
-.player-selection img, .computer-selection img {
+.playerSelection img, .computerSelection img {
   width:94%;
   border-radius: 50%;
   margin: 0.5rem;
   flex-grow: 0.5;
-  
 }
 
 /* general footer styles */
@@ -534,9 +535,11 @@ footer {
 footer >div {
   flex-wrap: wrap;
   height: 4rem;
-  width: 28%;
-  min-width: 200px;
-  margin-left: 5%;
+  max-width: 33%;
+  min-width: 190px;
+  margin: 1%;
+  align-items: center;
+  justify-content: space-around;
   color: rgb(193, 255, 193);
   font-weight: bold;
   font-size: 1rem;
@@ -567,13 +570,12 @@ footer >div {
 }
 
 #contactInfo {
-  margin-top: 1rem;
+  margin: 1rem 2% 1rem 2%;
   margin-bottom: 1rem;
   background-color: #102100;
   padding: 2%;
   border-radius: 0.5rem;
   box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.2rem, inset 0 0.1rem 0.8rem rgba(252, 252, 155, 0.9)  ;
-
 }
 
 #legalInfoLink {
@@ -584,9 +586,7 @@ footer >div {
 #mailtoLink {
   color: rgb(193, 255, 193);
   font-weight: 900;
-
 }
-
 
 /* This Scrollbar properties Work in Chrome, Safari, Edge (not Firefox) */
 footer p::-webkit-scrollbar {

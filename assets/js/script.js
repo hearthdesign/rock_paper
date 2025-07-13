@@ -21,7 +21,7 @@ const computerChoiceImg = document.getElementById("computerChoice");
 
 // const resetButton = document.getElementById("reset-btn");
 
-const moveButtons = document.querySelectorAll(".move-button");
+const moveButtons = document.querySelectorAll(".moveButton");
 
 // Sound effects
 const sounds = {
@@ -93,7 +93,7 @@ let selectedOpponent = {
   folder: "default",
 };
 
-const opponentButtons = document.querySelectorAll(".opponent-button");
+const opponentButtons = document.querySelectorAll(".opponentButton");
 const opponentAvatar = document.getElementById("opponentAvatar");
 const opponentNameDisplay = document.getElementById("opponentName");
 
