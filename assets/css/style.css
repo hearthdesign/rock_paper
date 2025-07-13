@@ -3,9 +3,7 @@
   box-sizing: border-box;
 }
 
-.moveButton, table{
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
-}
+
 
 html {
     height: 100%;
@@ -13,6 +11,11 @@ html {
     padding: 0;
     font-family: 'Roboto', 'Tahoma', sans-serif;
     scroll-behavior: smooth;
+}
+
+/* Fallback for emojis on Firefox and apple devices */
+.moveButton, table {
+  font-family:  'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
 }
 
 body {
@@ -279,6 +282,7 @@ th {
     display: flex;
     justify-content: space-around ;
     width: 100%;
+    height: auto;
     flex-wrap: wrap;
     margin-bottom: 0.5rem;
 }
@@ -289,7 +293,6 @@ th {
     box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.2rem;
     border-radius: 50%;
     padding: 0.2rem;
-    width: 100%;
     margin: 3%;
     cursor: pointer;
     width: 100px;
@@ -376,6 +379,7 @@ button.opponentButton:active {
   display: flex;
   align-items: center;
   justify-content: center;
+    height: auto;
   color: rgb(0, 53, 102);
   background-color: rgb(255, 255, 255);
   font-weight: bold;
@@ -383,8 +387,8 @@ button.opponentButton:active {
   border: rgb(141, 173, 236) 0.2rem solid;
   border-radius: 1.5rem;
   padding: 0.1rem 0.5rem;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 #scoreboard img {
@@ -441,9 +445,8 @@ button.opponentButton:active {
 #movesBtnsbox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1%;
   margin: 0.3%;
   background-color: rgb(255, 205, 162);
@@ -461,6 +464,7 @@ button.opponentButton:active {
   align-items: center;
   flex-wrap: wrap;
   width: 95%;
+  height: auto;
   margin: 0;
 }
 
@@ -469,6 +473,7 @@ button.opponentButton:active {
   border: 0.35rem solid rgb(254, 38, 63);
   border-radius: 50%;
   padding: 0.3rem;
+  width: auto;
   margin: 2.8%;
   cursor: pointer;
   font-size: 2.5rem;
@@ -497,10 +502,11 @@ button.opponentButton:active {
 .selections {
   display: flex;
   width: 100%;
+  height: auto;
   justify-content: space-between;
   color: rgb(193, 255, 193);
   align-items: center;
-  margin-top: 1%;
+  margin: 1%;
   padding: 1%;
   background-color: rgba(255, 86, 182, 0.5);
   border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
@@ -512,17 +518,19 @@ button.opponentButton:active {
   align-items: center;
   justify-content: space-between ;
   width: 49% ;
+  height: auto;
   background-color: rgb(0, 53, 102);
   border-radius: 1.5rem;
   padding: 0.5rem;
-  padding-bottom: 7%;
+
 }
 
 .playerSelection img, .computerSelection img {
   width:94%;
   border-radius: 50%;
+  height: auto;
   margin: 0.5rem;
-  flex-grow: 0.5;
+  flex-grow: 0;
 }
 
 /* Footer and divisions inside of it below */
