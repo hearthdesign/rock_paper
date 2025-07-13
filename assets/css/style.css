@@ -525,7 +525,7 @@ button.opponentButton:active {
   flex-grow: 0.5;
 }
 
-/* general footer styles */
+/* Footer and divisions inside of it below */
 footer {
   display: flex;
   justify-content: start;
