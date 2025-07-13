@@ -170,8 +170,8 @@ if (resetBtn) {
   playerScoreElement.textContent = '0';
   computerScoreElement.textContent = '0';
   resultElement.textContent = '';
-  playerChoiceImg.src = '';
-  computerChoiceImg.src = '';
+  playerChoiceImg.src = 'assets/images/placeholderMove.png';
+  computerChoiceImg.src = 'assets/images/placeholderMove.png';
 
 
     // Reset opponent image and name display
