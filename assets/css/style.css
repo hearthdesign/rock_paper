@@ -528,7 +528,7 @@ footer {
   border: 0.8rem solid rgb(156, 2, 20);
   box-shadow: #ff4848 0 0.1rem 0.3rem 0.2rem, inset 0 0.1rem 0.8rem rgba(255, 255, 55, 0.9);
   border-radius: 2.5rem;
-  margin: 1rem 1.5rem 0.2rem 1.5rem;
+  margin: 1rem 1.5rem 2% 1.5rem;
 }
 
 footer >div {
