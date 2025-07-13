@@ -28,7 +28,7 @@ body {
 
 header {
     justify-content: center;
-    background-color:rgb(17, 29, 0) ;
+    background-color:#102100;
     color: rgb(183, 0, 21);
     border: 0.9rem solid rgb(183, 0, 21);
     box-shadow: #ff4848 0 0.1rem 0.3rem 0.2rem,inset 0 0.1rem 0.8rem rgba(255, 255, 55, 0.9);
@@ -124,51 +124,7 @@ header {
     transition: 0.1s;
 }
 
-#gesturesImgBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#gesturesImg {
-    width: 55%;
-    min-width: 215px;
-    height: auto;;
-}
-
-#historySection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    width: 95%;
-    height: 100%;
-    background-color: rgba(255, 86, 182, 0.5);
-    border-radius: 3.5rem 0.8rem 0.8rem 3.5rem;
-    color: rgb(0, 53, 102);    
-    margin: 1rem ;
-    padding: 0.5rem 1rem;
-
-}
-
-#historyTextBox {
-    border-radius: 2.5rem 2% 2% 2%;
-} 
-
-#descriptionSection {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-color: rgba(21, 197, 255, 0.5);
-    border-radius: 3rem   1.5rem 1.5rem 3rem;
-    color: rgb(0, 53, 102);    
-    margin: 1rem 1.5rem 1rem 1.5rem;
-    padding: 0.6rem 0.6rem 0.6rem 0.6rem ;
-}
-
+/* Set of rules for the texts in "Home" and "History" */
 .blockText {
   display: block; 
   width: 98%;
@@ -196,11 +152,21 @@ header {
   box-shadow: inset 0 0.1rem 0.4rem rgba(47, 47, 1, 0.5);
 }
 
-.variationsSection {
-    display: block;
-    background-color: #f9f9f9; 
-    border-radius: 2% 2% 2%2.5rem;
+/* "Description" in "Home" */
+#descriptionSection {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(21, 197, 255, 0.5);
+    border-radius: 3rem   1.5rem 1.5rem 3rem;
+    color: rgb(0, 53, 102);    
+    margin: 1rem 1.5rem 1rem 1.5rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem ;
 }
+
 
 /* table @ "index.html" */
 #tableContainer{
@@ -236,6 +202,43 @@ th {
     padding: 0.2rem;
 }
 
+#historySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 95%;
+    height: 100%;
+    background-color: rgba(255, 86, 182, 0.5);
+    border-radius: 3.5rem 0.8rem 0.8rem 3.5rem;
+    color: rgb(0, 53, 102);    
+    margin: 1rem ;
+    padding: 0.5rem 1rem;
+}
+
+#historyTextBox {
+    border-radius: 2.5rem 2% 2% 2%;
+} 
+
+.variationsSection {
+    display: block;
+    background-color: #f9f9f9; 
+    border-radius: 2% 2% 2%2.5rem;
+}
+
+/* image pplaced after the "Variations" paragraph in the History section */
+#gesturesImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gesturesImg {
+    width: 55%;
+    min-width: 215px;
+    height: auto;
+}
+
 /* game.html */
 #gameSection {
   display: flex;
@@ -254,6 +257,7 @@ th {
   padding: 1rem;
 }
 
+/* Outer container for title and Opponent'sBtn container */
 #selectOpponent{
     display: flex;
     flex-direction: column;
@@ -270,6 +274,7 @@ th {
     box-shadow: inset 0 0.1rem 2rem rgba(255, 255, 55, 0.6)
 }
 
+/* Container just for the Opponent's Buttons + sound Toggle*/
 #choicesOpponent {
     display: flex;
     justify-content: space-around ;
@@ -326,6 +331,7 @@ button.opponentButton:active {
   text-align: center;
 }
 
+/* Scores, Selected Opponent and Reset Button */
 .scoreboard {
   display: flex;
   flex-direction: row;
@@ -413,6 +419,7 @@ button.opponentButton:active {
   transition: 0.1s;
 }
 
+/* Container for the Result message */
 #result {
   display: flex;
   flex-basis: 50%;
@@ -430,6 +437,7 @@ button.opponentButton:active {
   font-size: 0.8rem;
  }
 
+/*  Container "Make your Move" */
 #movesBtnsbox {
   display: flex;
   flex-direction: column;
@@ -479,6 +487,7 @@ button.opponentButton:active {
   transition: 0.1s;
 }
 
+/*  Container for the Pictures of the chosen moves */
 .moveButton:active {
   background: rgb(226, 6, 98);
   box-shadow: #a5f838 0 0.1rem 0.7rem 0.5rem;
@@ -525,45 +534,39 @@ footer {
   width: 95%;
   height: auto;
   padding: 2rem ;
-  background-color: rgb(33, 56, 0);
+  background-color: #102100;
   border: 0.8rem solid rgb(156, 2, 20);
   box-shadow: #ff4848 0 0.1rem 0.3rem 0.2rem, inset 0 0.1rem 0.8rem rgba(255, 255, 55, 0.9);
   border-radius: 2.5rem;
   margin: 1rem 1.5rem 2% 1.5rem;
 }
 
-footer >div {
-  flex-wrap: wrap;
-  height: 4rem;
-  max-width: 33%;
-  min-width: 190px;
+#legalInfo, #contactInfo {
+  max-width: 45%;
+  min-width: 10rem;
   margin: 1%;
   align-items: center;
-  justify-content: space-around;
+  height:4rem;
+  display: block;
+  text-wrap: wrap;
+  justify-content: space-around;;
   color: rgb(193, 255, 193);
-  font-weight: bold;
   font-size: 1rem;
   overflow-y: auto;
   scroll-behavior: smooth;
 }
 
-#legalInfo, #contactInfo {
-  display: block;
-  justify-content: start;
-  color: rgb(193, 255, 193);
-}
-
 #legalInfo h2, #contactInfo h2 {
   display: flex;
   font-size: 1rem;
+  font-weight: 900;
   margin-left: 0;
   align-items: flex-start;
 }
 
 #legalInfo {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: #063b2e;
+  margin: 1rem 2% 1rem 2%;
+  background-color: rgb(33, 56, 0);
   padding: 2%;
   border-radius: 0.5rem;
   box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.2rem, inset 0 0.1rem 0.8rem rgba(252, 252, 155, 0.9)  ;
@@ -571,8 +574,8 @@ footer >div {
 
 #contactInfo {
   margin: 1rem 2% 1rem 2%;
-  margin-bottom: 1rem;
-  background-color: #102100;
+ 
+  background-color: rgb(33, 56, 0);
   padding: 2%;
   border-radius: 0.5rem;
   box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.2rem, inset 0 0.1rem 0.8rem rgba(252, 252, 155, 0.9)  ;
