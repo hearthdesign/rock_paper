@@ -43,7 +43,7 @@ menuLinks.forEach(link => {
     // Wait for sound to play before redirecting
     setTimeout(() => {
       window.location.href = this.href;
-    }, 150); // Match the sound length (ms)
+    }, 330); // Match the sound length (ms)
   });
 });
 
