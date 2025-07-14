@@ -30,6 +30,7 @@ body {
 header {
     justify-content: center;
     background-color:#102100;
+    background: linear-gradient(180deg,rgb(8, 19, 0) 0%, rgb(25, 37, 5) 75%, rgba(70, 97, 27, 1) 100%);
     color: rgb(183, 0, 21);
     border: 0.9rem solid rgb(183, 0, 21);
     box-shadow: #ff4848 0 0.1rem 0.3rem 0.2rem,inset 0 0.1rem 0.8rem rgba(255, 255, 55, 0.9);
@@ -92,11 +93,11 @@ header {
   justify-content: center;
   align-items: center;
   margin: 2rem 50% 0.8rem 50%;
-  min-width: 12.5%;
+  min-width: 11%;
 }
 
   #logoDiv img {
-    width: 75%;
+    width: 100%;
     border-radius: 50%;
     border: 13% solid #fd2b55;
     box-shadow: #fd2b55 0 0 0.8rem 1rem, inset 0 0 1rem #ff214d;
@@ -304,27 +305,30 @@ th {
 /* Container just for the Opponent's Buttons + sound Toggle*/
 #choicesOpponent {
     display: flex;
-    justify-content: space-around ;
-    width: 100%;
+    justify-content: space-around;
+    width: 94%;
     height: auto;
+    gap: 1rem;
     flex-wrap: wrap;
-    margin-bottom: 0.5rem;
+    margin: 0 1rem 0 1rem;
 }
 
 .opponentButton {
+
     background-color: rgb(31, 53, 109);
     border: 0.5rem solid rgb(103, 215, 243);
     box-shadow: #f9f9f9 0 0.1rem 0.3rem 0.2rem;
     border-radius: 50%;
     padding: 0.2rem;
-    margin: 3%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-width: 90px;
     cursor: pointer;
-    width: 100px;
+    width: 10%;
 }
 
 .opponentButton img {
-    width: 98%;
-    height: auto;
+    width: 100%;
     border-radius: 50%;
 }   
 
@@ -346,16 +350,18 @@ button.opponentButton:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 5%;
+  min-width: 75px;
+  height: 20%;
   font-weight: 900;
   margin-top: 1.5rem;
+  margin-right: 2%;
   padding: 0.5rem;
-  color: rgb(177, 239, 255);
+  color: rgb(214, 247, 255);
   background-color: #005964;
   border: 0.35rem solid rgb(255, 182, 223);
   border-radius: 50%;
-  text-align: center;
+  
 }
 
 /* Scores, Selected Opponent and Reset Button */
@@ -386,7 +392,7 @@ button.opponentButton:active {
   font-weight: bold;
   font-size: 0.8rem;
   border: #5cc400 0.2rem solid;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   margin-top: auto;
   border-radius: 1.5rem;
   padding: 0.1rem 0.5rem;
@@ -427,6 +433,7 @@ button.opponentButton:active {
   color: white;
   cursor: pointer;
   margin-top: auto;
+  margin-bottom: 0.5rem;
   border-radius: 1.5rem;
   font-weight: 800;
   box-shadow: #f83838 0 0.1rem 0.3rem 0.2rem;
@@ -462,7 +469,7 @@ button.opponentButton:active {
   text-align: center;
   color:rgb(100, 0, 125);
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
  }
 
 /*  Container "Make your Move" */
@@ -530,8 +537,8 @@ button.opponentButton:active {
   justify-content: space-between;
   color: rgb(193, 255, 193);
   align-items: center;
-  margin: 1%;
-  padding: 1%;
+  margin: 3%;
+  padding: 3%;
   background-color: rgba(255, 86, 182, 0.5);
   border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
 }
@@ -540,13 +547,13 @@ button.opponentButton:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between ;
+  justify-content: space-around ;
   width: 49% ;
+  max-width: 47rem;
   height: auto;
   background-color: rgb(0, 53, 102);
   border-radius: 1.5rem;
   padding: 0.5rem;
-
 }
 
 .playerSelection img, .computerSelection img {
