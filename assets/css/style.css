@@ -42,21 +42,6 @@ header {
 
 }
 
-#gameName {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    height: 100%;
-    margin-left: 2.5%;
-    background-color: rgb(193, 255, 193);
-    box-shadow: #38cbf8 0 0.1rem 0.4rem 0.3rem;
-    color: rgb(79, 143, 0);
-    border-radius: 1.5rem;
-    padding: 0.5rem;
-}
-
  h1 {
     font-size: 1.5rem;
  }
@@ -86,16 +71,46 @@ header {
     text-align: start;
     color: rgb(193, 255, 193);
   }
+
+  #gameDivision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(193, 255, 193);
+    box-shadow: #38cbf8 0 0.1rem 0.4rem 0.3rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem 2.5%
+}
+
   #logoDiv {
-    max-width: 12.5%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 50% 0 50%;
+  min-width: 12.5%;
+}
 
   #logoDiv img {
-    width: 100%;
+    width: 75%;
     border-radius: 50%;
-    box-shadow: #5cc400 0 0.2rem 0.8rem 0.2rem, inset 0 0.1rem 0.9rem #5cc400;
-    margin-bottom: 0.5rem; 
+    border: 13% solid #fd2b55;
+    box-shadow: #fd2b55 0 0 0.8rem 1rem, inset 0 0 1rem #ff214d;
+    margin-bottom: 0; 
   }
+
+  #gameName {
+    font-size: xx-large;
+    width: fit-content;
+    color: #e3fdf7;
+    background-color:#ff214d ;
+    box-shadow: #ff214d 0 0.1rem 0.9rem 0.7rem;
+    border-radius: 35%;
+}
  
 #mainMenu {
     display: flex;
