@@ -91,7 +91,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 50% 0 50%;
+  margin: 2rem 50% 0.8rem 50%;
   min-width: 12.5%;
 }
 
