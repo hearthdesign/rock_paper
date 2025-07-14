@@ -32,7 +32,7 @@ const sounds = {
     click: new Audio("assets/sounds/click.mp3")
 };
 
-const menuLinks = document.querySelectorAll(".menu-sound");
+const menuLinks = document.querySelectorAll(".menuSound");
 
 menuLinks.forEach(link => {
   link.addEventListener("click", function (e) {
@@ -43,7 +43,7 @@ menuLinks.forEach(link => {
     // Wait for sound to play before redirecting
     setTimeout(() => {
       window.location.href = this.href;
-    }, 350); // Match the sound length (ms)
+    }, 150); // Match the sound length (ms)
   });
 });
 
@@ -63,7 +63,6 @@ moveButtons.forEach(button => {
 });
 
 let soundEnabled = true;
-
 
 // Runs after the page fully loads
 window.onload = function () {
@@ -160,7 +159,7 @@ function showResult(player, computer, result) {
   The code runs only on pages where the reset button is present.
   Also resets scores, result text, player/computer choices, and opponent display.
 */
-const resetBtn = document.getElementById('reset-btn')
+const resetBtn = document.getElementById('resetBtn')
 // Only add the listener if the button exists on the page
 if (resetBtn) {
   resetBtn.addEventListener('click', () => {
