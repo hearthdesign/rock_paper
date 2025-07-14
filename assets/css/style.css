@@ -462,8 +462,8 @@ button.opponentButton:active {
   align-items: center;
   width: 100%;
   height: auto;
-  margin-top: 1rem;
-  padding: 0.5rem;
+  margin: 0;
+  padding: 1.5rem;
   background-color: #c7fff1;
   border-radius: 0.5rem;
   text-align: center;
@@ -478,13 +478,13 @@ button.opponentButton:active {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 1%;
-  margin: 0.3%;
+
+  margin: 0 0.3%;
   background-color: rgb(255, 205, 162);
   border: 0.2rem solid rgba(255, 86, 182, 0.5);
   border-radius: 0.5rem 0.5rem 1.6rem 1.6rem;
   width: 100%;
-  height: 50%;
+  height: 5%;
   box-shadow: inset 0 0.2rem 2rem rgba(254, 239, 225, 0.9);
 }   
 
@@ -505,11 +505,11 @@ button.opponentButton:active {
   border-radius: 50%;
   padding: 0.3rem;
   width: auto;
-  margin: 2.8%;
+  margin: 1% 2.8% 2% 2.8%;
   cursor: pointer;
   font-size: 2.5rem;
   font-weight: 800;
-  box-shadow: #ffffff 0 0.2rem 0.7rem 0.5rem;    
+  box-shadow: #ffffff 0 0.2rem 0.7rem 0.5rem, inset#a4ff2e 0 0.2rem 0.7rem;    
 }
 
 .moveButton:hover {
@@ -517,8 +517,7 @@ button.opponentButton:active {
   font-weight: 800;
   border: 0.35rem solid #007910;
   border-radius: 50%;
-  padding: 0.3rem;
-  margin: 2.8%;
+  padding: 0.35rem;
   box-shadow: #459500 0 0.2rem 0.7rem 0.5rem;
   transition: 0.1s;
 }
@@ -537,7 +536,7 @@ button.opponentButton:active {
   justify-content: space-between;
   color: rgb(193, 255, 193);
   align-items: center;
-  margin: 3%;
+  margin: 0 3% 0 3%;
   padding: 3%;
   background-color: rgba(255, 86, 182, 0.5);
   border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
