@@ -533,7 +533,7 @@ button.opponentButton:active {
   display: flex;
   width: 100%;
   height: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   color: rgb(193, 255, 193);
   align-items: center;
   margin: 0 3% 0 3%;
