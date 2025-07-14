@@ -87,7 +87,7 @@ header {
     color: rgb(193, 255, 193);
   }
   #logoDiv {
-    max-width: 5%;
+    max-width: 12.5%;
   }
 
   #logoDiv img {
@@ -327,7 +327,7 @@ button.opponentButton:active {
     transition: 0.1s;
 }
 
-#toggleSound {
+#toggle-sound {
   display: flex;
   justify-content: center;
   align-items: center;
