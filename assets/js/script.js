@@ -1,5 +1,6 @@
-// Define valid choices and the moves each one can defeat
+// Define valid choices
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+// Define the moves each choices can defeat
 const winningMove = {
     rock: ["scissors", "lizard"],
     paper: ["rock", "spock"],
@@ -19,8 +20,6 @@ const computerScoreElement = document.getElementById("computerScore");
 const playerChoiceImg = document.getElementById("playerChoice");
 const computerChoiceImg = document.getElementById("computerChoice");
 
-// const resetButton = document.getElementById("reset-btn");
-
 const moveButtons = document.querySelectorAll(".moveButton");
 
 // Sound effects
@@ -33,7 +32,7 @@ const sounds = {
 };
 
 const menuLinks = document.querySelectorAll(".menuSound");
-
+// Sound play for each Button in Nav menu
 menuLinks.forEach(link => {
   link.addEventListener("click", function (e) {
     if (!soundEnabled) return;
@@ -47,18 +46,18 @@ menuLinks.forEach(link => {
   });
 });
 
-
+// Add event listener "click" to each moveButton
 moveButtons.forEach(button => { 
     button.addEventListener("click", () => {
         playSound("click");
+        // Update both playersChoices-object based on button data attributes
         const playerChoice = button.dataset.choice;
         const computerChoice = getComputerChoice();
-        
+        // Update the UI to reflect the selected Movements and scores and shows the result
         updateImgs(playerChoice, computerChoice);
         const result = checkWinner(playerChoice, computerChoice);
         showResult( playerChoice, computerChoice, result);
         updateScore(result);
-
     });
 });
 
@@ -99,9 +98,12 @@ const opponentNameDisplay = document.getElementById("opponentName");
 // updates the opponent's avatar and name when a button is clicked
 opponentButtons.forEach(button => {
   button.addEventListener("click", () => {
+    // Update the selectedOpponent object based on button data attributes
     selectedOpponent.name = button.dataset.name;
     selectedOpponent.image = `assets/images/${button.dataset.img}`;
     selectedOpponent.folder = button.dataset.name;
+
+    // Update the UI to reflect the selected opponent
     opponentNameDisplay.textContent = selectedOpponent.name;
     opponentAvatar.src = selectedOpponent.image;
     opponentAvatar.alt = selectedOpponent.name;

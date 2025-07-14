@@ -52,13 +52,7 @@
             </div>
         </div>
 
-        <div class="scoreboard">
-            <div id="yourScoreBox">YOU: <span id="playerScore">0</span></div>
-            <div id="opponentScoreBox">
-                <img id="opponentAvatar" src="assets/images/defaultOpponent.png" alt="Default Opponent" width="80"><br>
-                <div id="computerScoreBox">
-                    <span id="opponentName">Mad Robot</span>:<span id="computerScore">0</span></div>
-                </div>
+        <div class="resetboard">
             <button id="resetBtn">RESET</button>
         </div>
 
@@ -75,11 +69,15 @@
         
             <div class= "selections">
                 <div class="playerSelection">
-                    <h4>Your<br>selection:</h4>
+                    <div id="yourScoreBox">YOU: <span id="playerScore">0</span></div>
                     <img id="playerChoice" src="assets/images/placeholderMove.png" alt="placeholder">
                 </div>
                 <div class="computerSelection">
-                    <h4>Opponent's<br>selection:</h4>
+                     <div id="opponentScoreBox">
+                <img id="opponentAvatar" src="assets/images/defaultOpponent.png" alt="Default Opponent" width="80"><br>
+                <div id="computerScoreBox">
+                    <span id="opponentName">Mad Robot</span>:<span id="computerScore">0</span></div>
+                </div>
                     <img id="computerChoice" src="assets/images/placeholderMove.png" alt="placeholder">
                 </div>
 
