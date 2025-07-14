@@ -488,8 +488,6 @@ button.opponentButton:active {
   font-size: 1rem;
  }
 
-
-
 #yourScoreBox {
   display: flex;
   align-items: center;
@@ -502,7 +500,7 @@ button.opponentButton:active {
   margin-bottom: 1.97rem;
   margin-top: auto;
   border-radius: 1.5rem;
-  padding: 0.1rem 0.5rem;
+  padding: 0.3rem 0.5rem;
 }
 
 #opponentScoreBox {
@@ -512,6 +510,11 @@ button.opponentButton:active {
   justify-content: space-between;
   margin:0;
   gap: 0;
+}
+
+#opponentAvatar{
+  margin-top:01rem;
+  margin-bottom:0;
 }
 
 #computerScoreBox{
