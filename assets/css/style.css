@@ -446,7 +446,7 @@ button.opponentButton:active {
   border-radius: 50%;
   padding: 0.3rem;
   width: auto;
-  margin: 1% 2.8% 2% 2.8%;
+  margin: 1% 7% 2.5% 7%;
   cursor: pointer;
   font-size: 2.5rem;
   font-weight: 800;
@@ -456,9 +456,10 @@ button.opponentButton:active {
 .moveButton:hover {
   background-color: rgb(255, 38, 0);
   font-weight: 800;
+  font-size: 2.7rem;
   border: 0.35rem solid #007910;
   border-radius: 50%;
-  padding: 0.35rem;
+  padding: 0.15rem;
   box-shadow: #459500 0 0.2rem 0.7rem 0.5rem;
   transition: 0.1s;
 }
@@ -479,7 +480,7 @@ button.opponentButton:active {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 0.3rem;
+  padding: 0.2rem;
   background-color: #c7fff1;
   border-radius: 0.5rem;
   text-align: center;
