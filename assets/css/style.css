@@ -479,7 +479,7 @@ button.opponentButton:active {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 1rem;
+  padding: 0.3rem;
   background-color: #c7fff1;
   border-radius: 0.5rem;
   text-align: center;
@@ -497,10 +497,10 @@ button.opponentButton:active {
   font-weight: bold;
   font-size: 0.8rem;
   border: #5cc400 0.2rem solid;
-  margin-bottom: 1.97rem;
+  margin-bottom: 1rem;
   margin-top: auto;
   border-radius: 1.5rem;
-  padding: 0.3rem 0.5rem;
+  padding: 0.1rem 0.5rem;
 }
 
 #opponentScoreBox {
@@ -509,77 +509,70 @@ button.opponentButton:active {
   align-items: center;
   justify-content: space-between;
   margin:0;
-  gap: 0;
+  padding:0;
 }
 
 #opponentAvatar{
-  margin-top:01rem;
+  margin-top: 5%;
   margin-bottom:0;
+  width:75%;
+  padding: 0;
 }
 
 #computerScoreBox{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
   color: rgb(0, 53, 102);
   background-color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 0.8rem;
-  border: rgb(141, 173, 236) 0.2rem solid;
+  border: rgb(141, 236, 236) 0.2rem solid;
   border-radius: 1.5rem;
-  padding: 0.1rem 0.3rem;
-  margin-bottom: 2rem;
-  margin-top: 1rem ;
+  padding:  0.1rem 0.3rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
-
 .selections {
   display: flex;
+  align-items: stretch;
   width: 100%;
-  height: auto;
   justify-content: space-around;
-  color: rgb(193, 255, 193);
-  align-items: center;
-  margin: 0 3% 0 3%;
-  padding: 0 3% 0 3%;
+  padding: 0.5%;
   background-color: rgba(255, 86, 182, 0.5);
   border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
 }
 
-.playerSelection {
+.playerSelection,
+.computerSelection {
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 49% ;
-  max-width: 47rem;
-  height: auto;
+  padding: 2% 2.5%;
+
   background-color: rgb(0, 53, 102);
-  border-radius: 1.5rem;
-  padding: 12.5rem 0.5rem 0 0.5rem;
-  margin-top: auto;
-  margin-bottom: 0;
+  border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;;
+  min-width: 6.65rem;
+  width: 45.5%; 
+  max-width: 44rem;
 }
 
+.playerSelection{
+  margin-left: 3%;
+  margin-right: 1.5%;;
+}
 .computerSelection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 49% ;
-  max-width: 47rem;
-  height: auto;
-  background-color: rgb(0, 53, 102);
-  border-radius: 1.5rem;
-  padding: auto 0.5rem 0 0.5rem;
-  margin-top: auto;
-  margin-bottom: 0;
+  margin-left: 1.5%;
+  margin-right: 3%;
 }
 
 .playerSelection img, .computerSelection img {
-  width:94%;
+  width:98%;
   border-radius: 50%;
   height: auto;
-  margin-bottom: 0.5rem;
-  flex-grow: 0;
+  margin-bottom: 2%;
 }
 
 /* Footer and divisions inside of it below */
