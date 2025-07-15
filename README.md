@@ -108,6 +108,9 @@ No errors returned from the W3C HTML Validator
 No critical errors from the W3C CSS Validator (Jigsaw)
 4 warnings due to use of WebKit scrollbar styling, which isn’t recognized in Firefox. A Firefox-compatible fallback has been implemented, but the warnings still appear as expected.
 
+### JAVASCRIPT
+Tested on https://jshint.com/ without any critical error. (A semicolon was missed - error fixed)
+
 ### Cross-Browser Testing
 Tested successfully on:
 Firefox
