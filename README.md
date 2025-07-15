@@ -1,7 +1,8 @@
 # SPOCKY
 ## R.P.S.L.S. GAME – HTML – CSS – JAVASCRIPT
 ## Rock Paper Scissors Lizard Spock (RPSLS) – Web Game
-==SPOCKY== is a fun and interactive browser-based game inspired by the extended version of Rock Paper Scissors, made famous by *The Big Bang Theory*.
+
+SPOCKY is a fun and interactive browser-based game inspired by the extended version of Rock Paper Scissors, made famous by *The Big Bang Theory*.
 
 The aim of the game is to give anyone interested in games the opportunity to play this timeless game, which has existed throughout history and across many countries in various forms and with different rules.
 
@@ -14,7 +15,7 @@ This project began with a simple idea, a drawing, and inspiration from arcade ga
 
 ![opponent_buttons.png](https://github.com/hearthdesign/assets_for_repos/blob/main/assets_for_repos/assets/images/spocky/opponent_buttons.png)
 
-==SPOCKY== doesn't just recreate the RPSLS game; it also aims to evoke the nostalgic feeling of playing those vintage games. Additionally, the game features six opponents, each with unique avatars, moves, and a touch of humor.
+SPOCKY doesn't just recreate the RPSLS game; it also aims to evoke the nostalgic feeling of playing those vintage games. Additionally, the game features six opponents, each with unique avatars, moves, and a touch of humor.
 
 ## Project Structure
 The project follows a consistent design language with bold color schemes and rounded shapes. 
@@ -40,11 +41,11 @@ A colorful table using emojis to explain the rules and winning logic of all five
 *  Selection of five custom opponents plus one default
 *  Real-time score tracking
 *  Sound effects for:
-  - Navigation
-  - Opponent selection
-  - Move selection
-  - Game outcomes
-  - Resetting the game
+    - Navigation
+    - Opponent selection
+    - Move selection
+    - Game outcomes
+    - Resetting the game
 *  Toggle button to enable or disable sound
 
 #### 3. History Page (history.html)
@@ -128,8 +129,8 @@ The site was deployed via GitHub Pages:
 
 --- 
 ## Credits
-Code reference and debugging assistance: Stack Overflow, W3Schools
-These resources were crucial for learning and resolving syntax issues
+* Code reference and debugging assistance: Stack Overflow, W3Schools
+* These resources were crucial for learning and resolving syntax issues
 
 ## Content
 The text for the History page and general informations was taken from Wikipedia:
@@ -140,5 +141,6 @@ The text for the History page and general informations was taken from Wikipedia:
 - Sound effects from pixabay at https://pixabay.com/
 - Image at the History page sourced from Wikipedia at: 
 [RPSLS](https://en.wikipedia.org/wiki/Rock_paper_scissors#Additional_weapons)
+
 
 
