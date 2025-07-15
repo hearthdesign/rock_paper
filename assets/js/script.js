@@ -161,7 +161,7 @@ function showResult(player, computer, result) {
   The code runs only on pages where the reset button is present.
   Also resets scores, result text, player/computer choices, and opponent display.
 */
-const resetBtn = document.getElementById('resetBtn')
+const resetBtn = document.getElementById('resetBtn');
 // Only add the listener if the button exists on the page
 if (resetBtn) {
   resetBtn.addEventListener('click', () => {
