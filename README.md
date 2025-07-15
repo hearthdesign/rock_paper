@@ -142,6 +142,11 @@ The text for the History page and general informations was taken from Wikipedia:
 ## Media credits
 - Concept based on RPSLS variation.
 - Sound effects from pixabay at https://pixabay.com/
+   * main menu - click sound by: freesound_community 
+   * 1st click sound by: u_8g40a9z0la from Pixabay
+   * 2nd click sound by: irinairinafomicheva
+   * reset button sound by: u_2fbuaev0zn
+   * winning sound purchased at audiohero.com
 - Image at the History page sourced from Wikipedia at: 
 [RPSLS](https://en.wikipedia.org/wiki/Rock_paper_scissors#Additional_weapons)
 
