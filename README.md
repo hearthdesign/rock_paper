@@ -12,6 +12,8 @@ The RPSLS game expands the classic Rock Paper Scissors by adding two new moves: 
 
 This project began with a simple idea, a drawing, and inspiration from arcade games of the 1980s. The visual design — particularly the large, colorful, round buttons — was influenced by those classic machines. The aesthetics and straightforward logic of retro arcade games helped shape this digital version of RPSLS.
 
+![opponent_buttons.png](https://github.com/hearthdesign/assets_for_repos/blob/main/assets_for_repos/assets/images/spocky/opponent_buttons.png)
+
 ==SPOCKY== doesn't just recreate the RPSLS game; it also aims to evoke the nostalgic feeling of playing those vintage games. Additionally, the game features six opponents, each with unique avatars, moves, and a touch of humor.
 
 ## Project Structure
@@ -19,6 +21,7 @@ The project follows a consistent design language with bold color schemes and rou
 
 ### Common structural elements include:
 A header with logo, title, and navigation menu
+
    ![spocky_header.png](https://github.com/hearthdesign/assets_for_repos/blob/main/assets_for_repos/assets/images/spocky/spocky_header.png)
 A main section with page-specific content
 A footer containing legal information and a contact section
@@ -29,6 +32,8 @@ Scrollbars for long content to preserve layout and enhance usability
 Navigation menu to access the Game and History pages
 Brief introduction to RPSLS
 A colorful table using emojis to explain the rules and winning logic of all five moves
+
+![main_section.png](https://github.com/hearthdesign/assets_for_repos/blob/main/assets_for_repos/assets/images/spocky/main_section.png)
 
 #### 2. Game Page (game.html)
 *  Interactive game interface
@@ -90,8 +95,10 @@ An error occurred due to some elements (e.g., reset button or sound toggle) not 
 The fix was to wrap event listener code in if conditions to check for the presence of those elements before attaching handlers.
 
 ### Validator Testing
-[CSS](https://jigsaw.w3.org/css-validator/images/vcss)
-[CSS](https://jigsaw.w3.org/css-validator/images/vcss-blue)
+
+![CSS](https://jigsaw.w3.org/css-validator/images/vcss)
+
+![CSS](https://jigsaw.w3.org/css-validator/images/vcss-blue)
 
 ### HTML
 No errors returned from the W3C HTML Validator
