@@ -99,7 +99,6 @@ header {
   #logoDiv img {
     width: 100%;
     border-radius: 50%;
-    border: 13% solid #fd2b55;
     box-shadow: #fd2b55 0 0 0.8rem 1rem, inset 0 0 1rem #ff214d;
     margin-bottom: 0; 
   }
